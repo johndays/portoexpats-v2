@@ -40,7 +40,7 @@ import kotlinconfapp.ui_components.generated.resources.main_header_search_hint
 import kotlinconfapp.ui_components.generated.resources.search_24
 import org.jetbrains.compose.resources.stringResource
 import org.jetbrains.compose.ui.tooling.preview.Preview
-import org.jetbrains.kotlinconf.ui.theme.KotlinConfTheme
+import org.jetbrains.kotlinconf.ui.theme.PortoExpatsTheme
 import org.jetbrains.kotlinconf.ui.theme.PreviewHelper
 
 @Composable
@@ -56,7 +56,7 @@ fun MainHeaderSearchBar(
         modifier = modifier
             .height(48.dp)
             .fillMaxWidth()
-            .background(KotlinConfTheme.colors.mainBackground),
+            .background(PortoExpatsTheme.colors.mainBackground),
         verticalAlignment = Alignment.CenterVertically,
     ) {
         TopMenuButton(
@@ -88,9 +88,9 @@ fun MainHeaderSearchBar(
                     .fillMaxWidth()
                     .focusRequester(focusRequester),
                 singleLine = true,
-                textStyle = KotlinConfTheme.typography.text1
-                    .copy(color = KotlinConfTheme.colors.primaryText),
-                cursorBrush = SolidColor(KotlinConfTheme.colors.primaryText),
+                textStyle = PortoExpatsTheme.typography.text1
+                    .copy(color = PortoExpatsTheme.colors.primaryText),
+                cursorBrush = SolidColor(PortoExpatsTheme.colors.primaryText),
             )
             androidx.compose.animation.AnimatedVisibility(
                 searchValue.isEmpty(),
@@ -99,8 +99,8 @@ fun MainHeaderSearchBar(
             ) {
                 Text(
                     text = stringResource(UiRes.string.main_header_search_hint),
-                    style = KotlinConfTheme.typography.text1,
-                    color = KotlinConfTheme.colors.placeholderText
+                    style = PortoExpatsTheme.typography.text1,
+                    color = PortoExpatsTheme.colors.placeholderText
                 )
             }
         }
@@ -134,7 +134,7 @@ fun MainHeaderTitleBar(
         modifier = modifier
             .height(48.dp)
             .fillMaxWidth()
-            .background(KotlinConfTheme.colors.mainBackground),
+            .background(PortoExpatsTheme.colors.mainBackground),
         contentAlignment = Alignment.Center,
     ) {
         Row(Modifier.align(Alignment.CenterStart)) {
@@ -143,8 +143,8 @@ fun MainHeaderTitleBar(
         Text(
             text = title,
             modifier = Modifier.align(Alignment.Center).semantics { heading() },
-            style = KotlinConfTheme.typography.h3,
-            color = KotlinConfTheme.colors.primaryText,
+            style = PortoExpatsTheme.typography.h3,
+            color = PortoExpatsTheme.colors.primaryText,
         )
         Row(Modifier.align(Alignment.CenterEnd)) {
             endContent()
@@ -173,7 +173,7 @@ fun MainHeaderContainer(
         modifier = modifier
             .height(48.dp)
             .fillMaxWidth()
-            .background(KotlinConfTheme.colors.mainBackground),
+            .background(PortoExpatsTheme.colors.mainBackground),
     ) { target ->
         when (target) {
             MainHeaderContainerState.Title -> titleContent()

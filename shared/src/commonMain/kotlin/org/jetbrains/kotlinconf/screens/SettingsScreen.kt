@@ -57,7 +57,7 @@ import org.jetbrains.kotlinconf.LocalFlags
 import org.jetbrains.kotlinconf.ScreenWithTitle
 import org.jetbrains.kotlinconf.Theme
 import org.jetbrains.kotlinconf.ui.components.Text
-import org.jetbrains.kotlinconf.ui.theme.KotlinConfTheme
+import org.jetbrains.kotlinconf.ui.theme.PortoExpatsTheme
 import org.koin.compose.viewmodel.koinViewModel
 import kotlinconfapp.shared.generated.resources.Res as AppRes
 
@@ -153,7 +153,7 @@ private fun SectionHeading(
 ) {
     Text(
         text = text,
-        style = KotlinConfTheme.typography.h2,
+        style = PortoExpatsTheme.typography.h2,
         modifier = modifier.semantics { heading() }
             .padding(top = 16.dp, bottom = 12.dp)
     )
@@ -208,7 +208,7 @@ private fun ThemeBox(
                         Modifier
                             .border(
                                 width = 2.dp,
-                                color = KotlinConfTheme.colors.primaryBackground,
+                                color = PortoExpatsTheme.colors.primaryBackground,
                                 shape = RoundedCornerShape(12.dp)
                             )
                     } else Modifier
@@ -216,7 +216,7 @@ private fun ThemeBox(
                 .padding(6.dp)
                 .border(
                     width = 2.dp,
-                    color = KotlinConfTheme.colors.strokePale,
+                    color = PortoExpatsTheme.colors.strokePale,
                     shape = RoundedCornerShape(8.dp)
                 )
                 .clip(RoundedCornerShape(8.dp))
@@ -244,8 +244,8 @@ private fun ThemeBox(
                     Theme.DARK -> Res.string.settings_theme_dark
                 }
             ),
-            style = KotlinConfTheme.typography.text2,
-            color = KotlinConfTheme.colors.primaryText
+            style = PortoExpatsTheme.typography.text2,
+            color = PortoExpatsTheme.colors.primaryText
         )
     }
 }

@@ -89,7 +89,7 @@ import org.jetbrains.kotlinconf.ui.components.TalkCard
 import org.jetbrains.kotlinconf.ui.components.TalkStatus
 import org.jetbrains.kotlinconf.ui.components.Text
 import org.jetbrains.kotlinconf.ui.components.TopMenuButton
-import org.jetbrains.kotlinconf.ui.theme.KotlinConfTheme
+import org.jetbrains.kotlinconf.ui.theme.PortoExpatsTheme
 import org.jetbrains.kotlinconf.utils.DateTimeFormatting
 import org.jetbrains.kotlinconf.utils.FadingAnimationSpec
 import org.koin.compose.koinInject
@@ -155,7 +155,7 @@ fun ScheduleScreen(
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(color = KotlinConfTheme.colors.mainBackground)
+            .background(color = PortoExpatsTheme.colors.mainBackground)
     ) {
         Header(
             startContent = { NowButtonContent(state, listState) },
@@ -170,7 +170,7 @@ fun ScheduleScreen(
         )
         Divider(
             thickness = 1.dp,
-            color = KotlinConfTheme.colors.strokePale,
+            color = PortoExpatsTheme.colors.strokePale,
         )
 
         AnimatedContent(
@@ -427,8 +427,8 @@ private fun ScheduleList(
                         scheduleItems.size,
                         scheduleItems.size
                     ),
-                    color = KotlinConfTheme.colors.secondaryText,
-                    style = KotlinConfTheme.typography.text2,
+                    color = PortoExpatsTheme.colors.secondaryText,
+                    style = PortoExpatsTheme.typography.text2,
                     modifier = Modifier
                         .padding(horizontal = 12.dp)
                         .padding(bottom = 4.dp)
@@ -477,7 +477,7 @@ private fun ScheduleList(
                     is TimeSlotTitleItem -> {
                         Text(
                             text = item.value.title,
-                            style = KotlinConfTheme.typography.h2,
+                            style = PortoExpatsTheme.typography.h2,
                             modifier = Modifier
                                 .padding(horizontal = 12.dp)
                                 .padding(top = 24.dp, bottom = 8.dp)
@@ -606,7 +606,7 @@ private fun ScheduleList(
                     is NoBookmarksItem -> {
                         Text(
                             stringResource(Res.string.schedule_label_no_bookmarks),
-                            color = KotlinConfTheme.colors.noteText,
+                            color = PortoExpatsTheme.colors.noteText,
                             modifier = modifier.padding(12.dp),
                         )
                     }

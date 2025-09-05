@@ -21,7 +21,7 @@ class Typography(
     val text2: TextStyle
 )
 
-internal val KotlinConfTypography: Typography
+internal val PortoExpatsTypography: Typography
     @Composable
     get() {
         return Typography(

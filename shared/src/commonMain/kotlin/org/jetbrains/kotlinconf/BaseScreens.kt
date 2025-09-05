@@ -20,7 +20,7 @@ import org.jetbrains.kotlinconf.ui.components.MainHeaderTitleBar
 import org.jetbrains.kotlinconf.ui.components.MarkdownView
 import org.jetbrains.kotlinconf.ui.components.Text
 import org.jetbrains.kotlinconf.ui.components.TopMenuButton
-import org.jetbrains.kotlinconf.ui.theme.KotlinConfTheme
+import org.jetbrains.kotlinconf.ui.theme.PortoExpatsTheme
 import org.jetbrains.kotlinconf.utils.bottomInsetPadding
 import org.jetbrains.kotlinconf.utils.plus
 import org.jetbrains.kotlinconf.utils.topInsetPadding
@@ -36,7 +36,7 @@ fun ScreenWithTitle(
     Column(
         modifier
             .fillMaxSize()
-            .background(color = KotlinConfTheme.colors.mainBackground)
+            .background(color = PortoExpatsTheme.colors.mainBackground)
             .padding(topInsetPadding())
     ) {
         MainHeaderTitleBar(
@@ -50,12 +50,12 @@ fun ScreenWithTitle(
             }
         )
 
-        Divider(thickness = 1.dp, color = KotlinConfTheme.colors.strokePale)
+        Divider(thickness = 1.dp, color = PortoExpatsTheme.colors.strokePale)
 
         Column(
             Modifier
                 .fillMaxSize()
-                .background(color = KotlinConfTheme.colors.mainBackground)
+                .background(color = PortoExpatsTheme.colors.mainBackground)
                 .padding(horizontal = 12.dp)
                 .verticalScroll(contentScrollState)
                 .padding(bottomInsetPadding())
@@ -78,7 +78,7 @@ fun MarkdownScreenWithTitle(
     ScrollToTopHandler(scrollState)
     ScreenWithTitle(title, onBack, contentScrollState = scrollState) {
         if (header.isNotEmpty()) {
-            Text(header, style = KotlinConfTheme.typography.h1, modifier = Modifier.padding(top = 24.dp, bottom = 12.dp))
+            Text(header, style = PortoExpatsTheme.typography.h1, modifier = Modifier.padding(top = 24.dp, bottom = 12.dp))
         }
 
         MarkdownView(loadText, modifier = Modifier.padding(vertical = 12.dp), onCustomUriClick = onCustomUriClick)

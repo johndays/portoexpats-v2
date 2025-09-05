@@ -18,7 +18,7 @@ import org.jetbrains.kotlinconf.PARTNERS
 import org.jetbrains.kotlinconf.PartnerId
 import org.jetbrains.kotlinconf.ScreenWithTitle
 import org.jetbrains.kotlinconf.ui.components.Text
-import org.jetbrains.kotlinconf.ui.theme.KotlinConfTheme
+import org.jetbrains.kotlinconf.ui.theme.PortoExpatsTheme
 
 @Composable
 fun PartnerDetailScreen(
@@ -46,14 +46,14 @@ fun PartnerDetailScreen(
 
         Text(
             text = partner.name,
-            style = KotlinConfTheme.typography.h1,
+            style = PortoExpatsTheme.typography.h1,
         )
 
         Spacer(modifier = Modifier.height(8.dp))
 
         Text(
             text = partner.description,
-            color = KotlinConfTheme.colors.longText,
+            color = PortoExpatsTheme.colors.longText,
         )
 
         Spacer(modifier = Modifier.height(16.dp))

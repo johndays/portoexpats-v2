@@ -15,10 +15,10 @@ fun PreviewHelper(
     content: @Composable ColumnScope.() -> Unit,
 ) {
     Column {
-        KotlinConfTheme(darkTheme = false) {
+        PortoExpatsTheme(darkTheme = false) {
             PreviewColumn(paddingEnabled, content)
         }
-        KotlinConfTheme(darkTheme = true) {
+        PortoExpatsTheme(darkTheme = true) {
             PreviewColumn(paddingEnabled, content)
         }
     }
@@ -31,7 +31,7 @@ private fun PreviewColumn(
 ) {
     Column(
         modifier = Modifier
-            .background(KotlinConfTheme.colors.mainBackground)
+            .background(PortoExpatsTheme.colors.mainBackground)
             .padding(
                 if (paddingEnabled) 8.dp else 0.dp,
             ),

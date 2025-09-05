@@ -54,7 +54,7 @@ import org.jetbrains.kotlinconf.ui.components.MainHeaderSearchBar
 import org.jetbrains.kotlinconf.ui.components.MainHeaderTitleBar
 import org.jetbrains.kotlinconf.ui.components.Text
 import org.jetbrains.kotlinconf.ui.components.TopMenuButton
-import org.jetbrains.kotlinconf.ui.theme.KotlinConfTheme
+import org.jetbrains.kotlinconf.ui.theme.PortoExpatsTheme
 import org.jetbrains.kotlinconf.utils.bottomInsetPadding
 import org.jetbrains.kotlinconf.utils.plus
 import org.koin.compose.viewmodel.koinViewModel
@@ -99,7 +99,7 @@ fun LicensesScreen(
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(color = KotlinConfTheme.colors.mainBackground)
+            .background(color = PortoExpatsTheme.colors.mainBackground)
             .padding(topInsetPadding())
     ) {
         MainHeaderContainer(
@@ -141,7 +141,7 @@ fun LicensesScreen(
             }
         )
 
-        Divider(1.dp, KotlinConfTheme.colors.strokePale)
+        Divider(1.dp, PortoExpatsTheme.colors.strokePale)
 
         LibraryList(
             libraries = libraries,
@@ -167,8 +167,8 @@ fun SingleLicenseScreen(
     ScreenWithTitle(title = licenseName, onBack = onBack) {
         Text(
             licenseContent,
-            style = KotlinConfTheme.typography.text2,
-            color = KotlinConfTheme.colors.secondaryText,
+            style = PortoExpatsTheme.typography.text2,
+            color = PortoExpatsTheme.colors.secondaryText,
             modifier = Modifier.padding(PaddingValues(vertical = 12.dp) + bottomInsetPadding()),
         )
     }
@@ -200,8 +200,8 @@ private fun LibraryList(
                             libraries.size,
                             libraries.size
                         ),
-                        color = KotlinConfTheme.colors.secondaryText,
-                        style = KotlinConfTheme.typography.text2,
+                        color = PortoExpatsTheme.colors.secondaryText,
+                        style = PortoExpatsTheme.typography.text2,
                         modifier = Modifier
                             .padding(horizontal = 12.dp)
                             .padding(bottom = 4.dp)
@@ -239,7 +239,7 @@ private fun LibraryItem(
         modifier = modifier
             .fillMaxWidth()
             .background(
-                color = KotlinConfTheme.colors.tileBackground,
+                color = PortoExpatsTheme.colors.tileBackground,
                 shape = RoundedCornerShape(8.dp)
             )
             .clickable(onClick = onLicenseClick)
@@ -252,26 +252,26 @@ private fun LibraryItem(
         ) {
             Text(
                 text = highlightText(library.name, nameHighlights),
-                style = KotlinConfTheme.typography.h3,
-                color = KotlinConfTheme.colors.primaryText,
+                style = PortoExpatsTheme.typography.h3,
+                color = PortoExpatsTheme.colors.primaryText,
                 modifier = Modifier.weight(1f)
             )
             Text(
                 text = library.artifactVersion ?: "",
-                style = KotlinConfTheme.typography.text2,
-                color = KotlinConfTheme.colors.secondaryText,
+                style = PortoExpatsTheme.typography.text2,
+                color = PortoExpatsTheme.colors.secondaryText,
                 maxLines = 1,
             )
         }
         Text(
             text = highlightText(library.author, authorHighlights),
-            style = KotlinConfTheme.typography.text2,
-            color = KotlinConfTheme.colors.secondaryText,
+            style = PortoExpatsTheme.typography.text2,
+            color = PortoExpatsTheme.colors.secondaryText,
         )
         Text(
             text = highlightText(library.licenseName, licenseHighlights),
-            style = KotlinConfTheme.typography.text2,
-            color = KotlinConfTheme.colors.primaryText,
+            style = PortoExpatsTheme.typography.text2,
+            color = PortoExpatsTheme.colors.primaryText,
         )
     }
 }
@@ -287,8 +287,8 @@ private fun highlightText(text: String, highlights: List<IntRange>): AnnotatedSt
             if (!range.isEmpty()) {
                 addStyle(
                     style = SpanStyle(
-                        color = KotlinConfTheme.colors.primaryTextInverted,
-                        background = KotlinConfTheme.colors.primaryBackground,
+                        color = PortoExpatsTheme.colors.primaryTextInverted,
+                        background = PortoExpatsTheme.colors.primaryBackground,
                     ),
                     start = range.first,
                     end = range.last + 1,

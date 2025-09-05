@@ -14,9 +14,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7555FF7A242A565900829871"
-               BuildableName = "KotlinConf.app"
+               BuildableName = "PortoExpats.app"
                BlueprintName = "iosApp"
-               ReferencedContainer = "container:KotlinConf.xcodeproj">
+               ReferencedContainer = "container:PortoExpats.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7555FF7A242A565900829871"
-            BuildableName = "KotlinConf.app"
+            BuildableName = "PortoExpats.app"
             BlueprintName = "iosApp"
-            ReferencedContainer = "container:KotlinConf.xcodeproj">
+            ReferencedContainer = "container:PortoExpats.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>

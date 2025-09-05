@@ -40,7 +40,7 @@ import org.jetbrains.compose.resources.vectorResource
 import org.jetbrains.kotlinconf.ui.components.Divider
 import org.jetbrains.kotlinconf.ui.components.MainHeaderTitleBar
 import org.jetbrains.kotlinconf.ui.components.PageMenuItem
-import org.jetbrains.kotlinconf.ui.theme.KotlinConfTheme
+import org.jetbrains.kotlinconf.ui.theme.PortoExpatsTheme
 
 
 @Composable
@@ -55,9 +55,9 @@ fun InfoScreen(
     onBluesky: () -> Unit,
     onSettings: () -> Unit,
 ) {
-    Column(Modifier.fillMaxSize().background(color = KotlinConfTheme.colors.mainBackground)) {
+    Column(Modifier.fillMaxSize().background(color = PortoExpatsTheme.colors.mainBackground)) {
         MainHeaderTitleBar(stringResource(Res.string.info_title))
-        Divider(1.dp, KotlinConfTheme.colors.strokePale)
+        Divider(1.dp, PortoExpatsTheme.colors.strokePale)
 
         Column(
             Modifier
@@ -119,9 +119,9 @@ private fun SocialSquare(
         modifier = modifier
             .clip(RoundedCornerShape(8.dp))
             .clickable(onClick = onClick)
-            .background(KotlinConfTheme.colors.tileBackground)
+            .background(PortoExpatsTheme.colors.tileBackground)
             .padding(vertical = 32.dp)
             .size(64.dp),
-        colorFilter = ColorFilter.tint(KotlinConfTheme.colors.primaryText),
+        colorFilter = ColorFilter.tint(PortoExpatsTheme.colors.primaryText),
     )
 }

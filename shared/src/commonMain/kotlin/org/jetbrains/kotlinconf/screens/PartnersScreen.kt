@@ -26,7 +26,7 @@ import org.jetbrains.kotlinconf.ui.components.MainHeaderTitleBar
 import org.jetbrains.kotlinconf.ui.components.PartnerCard
 import org.jetbrains.kotlinconf.ui.components.Text
 import org.jetbrains.kotlinconf.ui.components.TopMenuButton
-import org.jetbrains.kotlinconf.ui.theme.KotlinConfTheme
+import org.jetbrains.kotlinconf.ui.theme.PortoExpatsTheme
 import org.jetbrains.kotlinconf.utils.bottomInsetPadding
 import org.jetbrains.kotlinconf.utils.plus
 import org.jetbrains.kotlinconf.utils.topInsetPadding
@@ -40,7 +40,7 @@ fun PartnersScreen(
 ) {
     Column(
         Modifier.fillMaxSize()
-            .background(color = KotlinConfTheme.colors.mainBackground)
+            .background(color = PortoExpatsTheme.colors.mainBackground)
             .padding(topInsetPadding())
     ) {
         MainHeaderTitleBar(
@@ -54,7 +54,7 @@ fun PartnersScreen(
             }
         )
 
-        Divider(thickness = 1.dp, color = KotlinConfTheme.colors.strokePale)
+        Divider(thickness = 1.dp, color = PortoExpatsTheme.colors.strokePale)
 
         val lazyListState = rememberLazyListState()
         ScrollToTopHandler(lazyListState)
@@ -68,8 +68,8 @@ fun PartnersScreen(
                 stickyHeader {
                     Text(
                         text = stringResource(level),
-                        style = KotlinConfTheme.typography.h1,
-                        modifier = Modifier.fillMaxWidth().background(KotlinConfTheme.colors.mainBackground).padding(vertical = 12.dp)
+                        style = PortoExpatsTheme.typography.h1,
+                        modifier = Modifier.fillMaxWidth().background(PortoExpatsTheme.colors.mainBackground).padding(vertical = 12.dp)
                     )
                 }
                 items(partners) { partner ->

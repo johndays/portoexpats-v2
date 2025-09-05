@@ -34,7 +34,7 @@ import org.jetbrains.compose.ui.tooling.preview.Preview
 import org.jetbrains.kotlinconf.ui.components.NowButtonState.After
 import org.jetbrains.kotlinconf.ui.components.NowButtonState.Before
 import org.jetbrains.kotlinconf.ui.components.NowButtonState.Current
-import org.jetbrains.kotlinconf.ui.theme.KotlinConfTheme
+import org.jetbrains.kotlinconf.ui.theme.PortoExpatsTheme
 import org.jetbrains.kotlinconf.ui.theme.PreviewHelper
 
 private val NowButtonShape = RoundedCornerShape(
@@ -55,13 +55,13 @@ fun NowButton(
 ) {
     val active = time != Current
     val textColor by animateColorAsState(
-        if (active) KotlinConfTheme.colors.primaryTextInverted
-        else KotlinConfTheme.colors.noteText,
+        if (active) PortoExpatsTheme.colors.primaryTextInverted
+        else PortoExpatsTheme.colors.noteText,
         ColorSpringSpec,
     )
     val background by animateColorAsState(
-        if (active) KotlinConfTheme.colors.primaryBackground
-        else KotlinConfTheme.colors.tileBackground,
+        if (active) PortoExpatsTheme.colors.primaryBackground
+        else PortoExpatsTheme.colors.tileBackground,
         ColorSpringSpec,
     )
 
@@ -77,7 +77,7 @@ fun NowButton(
     ) {
         Text(
             text = stringResource(UiRes.string.now),
-            style = KotlinConfTheme.typography.text2,
+            style = PortoExpatsTheme.typography.text2,
             color = textColor,
         )
 

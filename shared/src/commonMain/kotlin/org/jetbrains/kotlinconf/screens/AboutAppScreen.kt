@@ -37,7 +37,7 @@ import org.jetbrains.compose.resources.vectorResource
 import org.jetbrains.kotlinconf.ScreenWithTitle
 import org.jetbrains.kotlinconf.ui.components.PageMenuItem
 import org.jetbrains.kotlinconf.ui.components.Text
-import org.jetbrains.kotlinconf.ui.theme.KotlinConfTheme
+import org.jetbrains.kotlinconf.ui.theme.PortoExpatsTheme
 import org.jetbrains.kotlinconf.utils.getStoreUrl
 
 @Composable
@@ -58,7 +58,7 @@ fun AboutAppScreen(
         Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
             Text(
                 stringResource(Res.string.about_app_description),
-                color = KotlinConfTheme.colors.longText,
+                color = PortoExpatsTheme.colors.longText,
                 modifier = Modifier.padding(vertical = 24.dp),
             )
 
@@ -88,8 +88,8 @@ fun AboutAppScreen(
             var tapCount by remember { mutableStateOf(0) }
             Text(
                 text = appVersion,
-                style = KotlinConfTheme.typography.text2,
-                color = KotlinConfTheme.colors.primaryText,
+                style = PortoExpatsTheme.typography.text2,
+                color = PortoExpatsTheme.colors.primaryText,
                 modifier = Modifier
                     .align(Alignment.CenterHorizontally)
                     .clip(RoundedCornerShape(8.dp))

@@ -13,14 +13,14 @@ import androidx.compose.runtime.compositionLocalOf
 private object NoIndication : Indication
 
 val LocalColors = compositionLocalOf<Colors> {
-    error("KotlinConfTheme must be part of the call hierarchy to provide colors")
+    error("PortoExpatsTheme must be part of the call hierarchy to provide colors")
 }
 
 val LocalTypography = compositionLocalOf<Typography> {
-    error("KotlinConfTheme must be part of the call hierarchy to provide typography")
+    error("PortoExpatsTheme must be part of the call hierarchy to provide typography")
 }
 
-object KotlinConfTheme {
+object PortoExpatsTheme {
     val colors: Colors
         @Composable
         @ReadOnlyComposable
@@ -40,14 +40,14 @@ expect object LocalAppTheme {
 }
 
 @Composable
-fun KotlinConfTheme(
+fun PortoExpatsTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     rippleEnabled: Boolean = true,
     content: @Composable () -> Unit,
 ) {
     CompositionLocalProvider(
-        LocalColors provides if (darkTheme) KotlinConfDarkColors else KotlinConfLightColors,
-        LocalTypography provides KotlinConfTypography,
+        LocalColors provides if (darkTheme) PortoExpatsDarkColors else PortoExpatsLightColors,
+        LocalTypography provides PortoExpatsTypography,
         LocalIndication provides if (rippleEnabled) ripple() else NoIndication,
         LocalAppTheme provides darkTheme,
     ) {

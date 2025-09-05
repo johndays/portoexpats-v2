@@ -24,7 +24,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.unit.dp
 import org.jetbrains.compose.ui.tooling.preview.Preview
-import org.jetbrains.kotlinconf.ui.theme.KotlinConfTheme
+import org.jetbrains.kotlinconf.ui.theme.PortoExpatsTheme
 import org.jetbrains.kotlinconf.ui.theme.PreviewHelper
 
 private val SwitcherItemShape = RoundedCornerShape(percent = 50)
@@ -38,14 +38,14 @@ private fun SwitcherItem(
 ) {
     val backgroundColor by animateColorAsState(
         if (selected) Color.Transparent
-        else KotlinConfTheme.colors.tileBackground,
+        else PortoExpatsTheme.colors.tileBackground,
     )
     val textColor by animateColorAsState(
-        if (selected) KotlinConfTheme.colors.primaryText
-        else KotlinConfTheme.colors.secondaryText,
+        if (selected) PortoExpatsTheme.colors.primaryText
+        else PortoExpatsTheme.colors.secondaryText,
     )
     val strokeColor by animateColorAsState(
-        if (selected) KotlinConfTheme.colors.strokeFull
+        if (selected) PortoExpatsTheme.colors.strokeFull
         else Color.Transparent,
     )
 
@@ -69,7 +69,7 @@ private fun SwitcherItem(
     ) {
         Text(
             label,
-            style = KotlinConfTheme.typography.text1,
+            style = PortoExpatsTheme.typography.text1,
             color = textColor,
         )
     }

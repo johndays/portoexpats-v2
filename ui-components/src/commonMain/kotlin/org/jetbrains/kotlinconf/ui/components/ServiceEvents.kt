@@ -17,7 +17,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.unit.dp
 import org.jetbrains.compose.ui.tooling.preview.Preview
-import org.jetbrains.kotlinconf.ui.theme.KotlinConfTheme
+import org.jetbrains.kotlinconf.ui.theme.PortoExpatsTheme
 import org.jetbrains.kotlinconf.ui.theme.PreviewHelper
 
 data class ServiceEventData(
@@ -39,8 +39,8 @@ private fun ServiceEventItem(
     ) {
         Text(
             text = event.title,
-            style = KotlinConfTheme.typography.h3,
-            color = KotlinConfTheme.colors.primaryText,
+            style = PortoExpatsTheme.typography.h3,
+            color = PortoExpatsTheme.colors.primaryText,
         )
 
         Spacer(Modifier.weight(1f))
@@ -52,8 +52,8 @@ private fun ServiceEventItem(
         if (event.note != null) {
             Text(
                 text = event.note,
-                style = KotlinConfTheme.typography.text2,
-                color = KotlinConfTheme.colors.noteText,
+                style = PortoExpatsTheme.typography.text2,
+                color = PortoExpatsTheme.colors.noteText,
                 maxLines = 1,
             )
         }
@@ -61,8 +61,8 @@ private fun ServiceEventItem(
         if (event.time != null) {
             Text(
                 text = event.time,
-                style = KotlinConfTheme.typography.text2,
-                color = KotlinConfTheme.colors.primaryText,
+                style = PortoExpatsTheme.typography.text2,
+                color = PortoExpatsTheme.colors.primaryText,
                 maxLines = 1,
             )
         }
@@ -88,11 +88,11 @@ fun ServiceEvents(
     Column(
         modifier
             .clip(RoundedCornerShape(8.dp))
-            .background(KotlinConfTheme.colors.tileBackground)
+            .background(PortoExpatsTheme.colors.tileBackground)
     ) {
         events.forEachIndexed { index, event ->
             if (index > 0) {
-                Divider(1.dp, KotlinConfTheme.colors.strokePale)
+                Divider(1.dp, PortoExpatsTheme.colors.strokePale)
             }
             ServiceEventItem(event)
         }

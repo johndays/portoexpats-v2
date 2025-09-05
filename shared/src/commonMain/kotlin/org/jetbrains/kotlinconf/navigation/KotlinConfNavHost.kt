@@ -78,7 +78,7 @@ private fun NotificationHandler(navController: NavHostController) {
 }
 
 @Composable
-internal fun KotlinConfNavHost(
+internal fun PortoExpatsNavHost(
     isOnboardingComplete: Boolean,
     popEnterTransition: @JvmSuppressWildcards (AnimatedContentTransitionScope<NavBackStackEntry>.() -> EnterTransition)?,
     popExitTransition: @JvmSuppressWildcards (AnimatedContentTransitionScope<NavBackStackEntry>.() -> ExitTransition)?,

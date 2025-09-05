@@ -24,8 +24,8 @@ import org.jetbrains.kotlinconf.backend.schema.Users
 import org.jetbrains.kotlinconf.backend.schema.Votes
 import org.slf4j.LoggerFactory
 
-internal class KotlinConfRepository(config: ApplicationConfig) {
-    private val log = LoggerFactory.getLogger("KotlinConfRepository")
+internal class PortoExpatsRepository(config: ApplicationConfig) {
+    private val log = LoggerFactory.getLogger("PortoExpatsRepository")
 
     init {
         val hikariConfig = HikariConfig()

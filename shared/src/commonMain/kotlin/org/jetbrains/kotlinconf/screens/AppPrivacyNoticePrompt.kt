@@ -47,7 +47,7 @@ import org.jetbrains.kotlinconf.ui.components.MainHeaderTitleBar
 import org.jetbrains.kotlinconf.ui.components.MarkdownView
 import org.jetbrains.kotlinconf.ui.components.Text
 import org.jetbrains.kotlinconf.ui.components.TopMenuButton
-import org.jetbrains.kotlinconf.ui.theme.KotlinConfTheme
+import org.jetbrains.kotlinconf.ui.theme.PortoExpatsTheme
 import org.jetbrains.kotlinconf.utils.FadingAnimationSpec
 import org.koin.compose.viewmodel.koinViewModel
 import kotlinconfapp.shared.generated.resources.Res as AppRes
@@ -73,7 +73,7 @@ fun AppPrivacyNoticePrompt(
     Column(
         horizontalAlignment = Alignment.CenterHorizontally,
         modifier = Modifier
-            .background(color = KotlinConfTheme.colors.mainBackground)
+            .background(color = PortoExpatsTheme.colors.mainBackground)
             .windowInsetsPadding(WindowInsets.safeDrawing)
     ) {
         AnimatedContent(
@@ -95,7 +95,7 @@ fun AppPrivacyNoticePrompt(
                     )
                     Divider(
                         thickness = 1.dp,
-                        color = KotlinConfTheme.colors.strokePale,
+                        color = PortoExpatsTheme.colors.strokePale,
                     )
                     val scrollState = rememberScrollState()
                     ScrollToTopHandler(scrollState)
@@ -114,7 +114,7 @@ fun AppPrivacyNoticePrompt(
                     Spacer(Modifier.weight(1f))
                     Divider(
                         thickness = 1.dp,
-                        color = KotlinConfTheme.colors.strokePale,
+                        color = PortoExpatsTheme.colors.strokePale,
                     )
                 }
             } else {
@@ -132,11 +132,11 @@ fun AppPrivacyNoticePrompt(
                     )
                     Text(
                         stringResource(AppRes.string.privacy_notice_title),
-                        style = KotlinConfTheme.typography.h1
+                        style = PortoExpatsTheme.typography.h1
                     )
                     Text(
                         stringResource(AppRes.string.privacy_notice_description),
-                        color = KotlinConfTheme.colors.longText,
+                        color = PortoExpatsTheme.colors.longText,
                     )
                     Action(
                         stringResource(AppRes.string.privacy_notice_read_action),

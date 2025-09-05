@@ -24,7 +24,7 @@ import org.jetbrains.kotlinconf.ui.components.MarkdownView
 import org.jetbrains.kotlinconf.ui.components.NetworkImage
 import org.jetbrains.kotlinconf.ui.components.Text
 import org.jetbrains.kotlinconf.ui.components.TopMenuButton
-import org.jetbrains.kotlinconf.ui.theme.KotlinConfTheme
+import org.jetbrains.kotlinconf.ui.theme.PortoExpatsTheme
 import org.jetbrains.kotlinconf.utils.topInsetPadding
 import org.koin.compose.viewmodel.koinViewModel
 import org.koin.core.parameter.parametersOf
@@ -40,7 +40,7 @@ fun NewsDetailScreen(
     Column(
         Modifier
             .fillMaxSize()
-            .background(color = KotlinConfTheme.colors.mainBackground)
+            .background(color = PortoExpatsTheme.colors.mainBackground)
             .padding(topInsetPadding())
     ) {
         MainHeaderTitleBar(
@@ -54,12 +54,12 @@ fun NewsDetailScreen(
             }
         )
 
-        Divider(thickness = 1.dp, color = KotlinConfTheme.colors.strokePale)
+        Divider(thickness = 1.dp, color = PortoExpatsTheme.colors.strokePale)
 
         Column(
             Modifier
                 .fillMaxSize()
-                .background(color = KotlinConfTheme.colors.mainBackground)
+                .background(color = PortoExpatsTheme.colors.mainBackground)
                 .verticalScroll(rememberScrollState())
         ) {
             if (state != null) {
@@ -76,7 +76,7 @@ fun NewsDetailScreen(
                         .fillMaxWidth()
                         .padding(vertical = 16.dp, horizontal = 12.dp)
                 ) {
-                    Text(text = state.title, style = KotlinConfTheme.typography.h2)
+                    Text(text = state.title, style = PortoExpatsTheme.typography.h2)
                     Spacer(Modifier.height(12.dp))
                     MarkdownView(text = state.content)
                 }

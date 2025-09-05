@@ -1,6 +1,6 @@
 @file:Suppress("UnstableApiUsage")
 
-rootProject.name = "KotlinConfApp"
+rootProject.name = "PortoExpatsApp"
 
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 

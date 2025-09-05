@@ -45,7 +45,7 @@ import org.jetbrains.kotlinconf.ui.components.Divider
 import org.jetbrains.kotlinconf.ui.components.PageMenuItem
 import org.jetbrains.kotlinconf.ui.components.SpeakerCard
 import org.jetbrains.kotlinconf.ui.components.Text
-import org.jetbrains.kotlinconf.ui.theme.KotlinConfTheme
+import org.jetbrains.kotlinconf.ui.theme.PortoExpatsTheme
 import org.koin.compose.viewmodel.koinViewModel
 
 @Composable
@@ -70,7 +70,7 @@ fun AboutConference(
         ) {
             Text(
                 text = stringResource(Res.string.about_conference_header),
-                style = KotlinConfTheme.typography.h1,
+                style = PortoExpatsTheme.typography.h1,
                 modifier = Modifier.semantics { heading() }
             )
             Text(text = stringResource(Res.string.about_conference_description))
@@ -138,7 +138,7 @@ private fun EventCard(
     time: String,
     day2: String = "",
     onSpeaker: (SpeakerId) -> Unit,
-    backgroundColor: Color = KotlinConfTheme.colors.mainBackground,
+    backgroundColor: Color = PortoExpatsTheme.colors.mainBackground,
 ) {
     val roundedCornerShape = RoundedCornerShape(8.dp)
     Column(
@@ -146,7 +146,7 @@ private fun EventCard(
             .background(backgroundColor)
             .border(
                 width = 1.dp,
-                color = KotlinConfTheme.colors.strokePale,
+                color = PortoExpatsTheme.colors.strokePale,
                 shape = roundedCornerShape,
             ).clip(roundedCornerShape),
     ) {
@@ -174,14 +174,14 @@ private fun EventCard(
         }
 
         if (location.isNotEmpty() || time.isNotEmpty()) {
-            Divider(1.dp, KotlinConfTheme.colors.strokePale)
+            Divider(1.dp, PortoExpatsTheme.colors.strokePale)
 
             Row(
                 modifier = Modifier.padding(16.dp).fillMaxSize(),
                 horizontalArrangement = Arrangement.SpaceBetween
             ) {
-                Text(location, style = KotlinConfTheme.typography.text2)
-                Text(time, style = KotlinConfTheme.typography.text2)
+                Text(location, style = PortoExpatsTheme.typography.text2)
+                Text(time, style = PortoExpatsTheme.typography.text2)
             }
         }
     }

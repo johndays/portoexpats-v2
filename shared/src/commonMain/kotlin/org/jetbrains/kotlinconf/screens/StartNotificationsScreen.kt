@@ -30,7 +30,7 @@ import org.jetbrains.compose.resources.stringResource
 import org.jetbrains.compose.resources.vectorResource
 import org.jetbrains.kotlinconf.ui.components.Button
 import org.jetbrains.kotlinconf.ui.components.Text
-import org.jetbrains.kotlinconf.ui.theme.KotlinConfTheme
+import org.jetbrains.kotlinconf.ui.theme.PortoExpatsTheme
 import org.koin.compose.viewmodel.koinViewModel
 import kotlinconfapp.shared.generated.resources.Res as AppRes
 
@@ -50,7 +50,7 @@ fun StartNotificationsScreen(
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(color = KotlinConfTheme.colors.mainBackground)
+            .background(color = PortoExpatsTheme.colors.mainBackground)
             .windowInsetsPadding(WindowInsets.safeDrawing)
     ) {
         Column(
@@ -68,14 +68,14 @@ fun StartNotificationsScreen(
             )
             Text(
                 stringResource(AppRes.string.notifications_title),
-                style = KotlinConfTheme.typography.h1,
+                style = PortoExpatsTheme.typography.h1,
                 modifier = Modifier.semantics {
                     heading()
                 }
             )
             Text(
                 stringResource(AppRes.string.notifications_description),
-                color = KotlinConfTheme.colors.longText,
+                color = PortoExpatsTheme.colors.longText,
             )
             if (notificationSettings != null) {
                 NotificationSettings(

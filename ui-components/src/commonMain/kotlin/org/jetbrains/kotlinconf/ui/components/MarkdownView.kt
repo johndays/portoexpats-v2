@@ -30,7 +30,7 @@ import kotlinx.coroutines.flow.flatMapLatest
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.flow.stateIn
-import org.jetbrains.kotlinconf.ui.theme.KotlinConfTheme
+import org.jetbrains.kotlinconf.ui.theme.PortoExpatsTheme
 import kotlin.random.Random
 
 @Composable
@@ -93,36 +93,36 @@ private fun MarkdownImpl(
         Markdown(
             state = state,
             colors = DefaultMarkdownColors(
-                text = KotlinConfTheme.colors.longText,
-                codeText = KotlinConfTheme.colors.secondaryText,
-                linkText = KotlinConfTheme.colors.purpleText,
-                codeBackground = KotlinConfTheme.colors.mainBackground,
-                inlineCodeText = KotlinConfTheme.colors.secondaryText,
-                inlineCodeBackground = KotlinConfTheme.colors.mainBackground,
-                dividerColor = KotlinConfTheme.colors.strokePale,
-                tableText = KotlinConfTheme.colors.longText,
-                tableBackground = KotlinConfTheme.colors.mainBackground,
+                text = PortoExpatsTheme.colors.longText,
+                codeText = PortoExpatsTheme.colors.secondaryText,
+                linkText = PortoExpatsTheme.colors.purpleText,
+                codeBackground = PortoExpatsTheme.colors.mainBackground,
+                inlineCodeText = PortoExpatsTheme.colors.secondaryText,
+                inlineCodeBackground = PortoExpatsTheme.colors.mainBackground,
+                dividerColor = PortoExpatsTheme.colors.strokePale,
+                tableText = PortoExpatsTheme.colors.longText,
+                tableBackground = PortoExpatsTheme.colors.mainBackground,
             ),
             typography = DefaultMarkdownTypography(
-                text = KotlinConfTheme.typography.text1,
-                code = KotlinConfTheme.typography.text1,
-                h1 = KotlinConfTheme.typography.h1,
-                h2 = KotlinConfTheme.typography.h2,
-                h3 = KotlinConfTheme.typography.h3,
-                h4 = KotlinConfTheme.typography.h4,
-                h5 = KotlinConfTheme.typography.h4,
-                h6 = KotlinConfTheme.typography.h4,
-                quote = KotlinConfTheme.typography.text2,
-                paragraph = KotlinConfTheme.typography.text1,
-                ordered = KotlinConfTheme.typography.text1,
-                bullet = KotlinConfTheme.typography.text1,
-                list = KotlinConfTheme.typography.text1,
-                link = KotlinConfTheme.typography.text1,
-                inlineCode = KotlinConfTheme.typography.text1,
-                table = KotlinConfTheme.typography.text1,
+                text = PortoExpatsTheme.typography.text1,
+                code = PortoExpatsTheme.typography.text1,
+                h1 = PortoExpatsTheme.typography.h1,
+                h2 = PortoExpatsTheme.typography.h2,
+                h3 = PortoExpatsTheme.typography.h3,
+                h4 = PortoExpatsTheme.typography.h4,
+                h5 = PortoExpatsTheme.typography.h4,
+                h6 = PortoExpatsTheme.typography.h4,
+                quote = PortoExpatsTheme.typography.text2,
+                paragraph = PortoExpatsTheme.typography.text1,
+                ordered = PortoExpatsTheme.typography.text1,
+                bullet = PortoExpatsTheme.typography.text1,
+                list = PortoExpatsTheme.typography.text1,
+                link = PortoExpatsTheme.typography.text1,
+                inlineCode = PortoExpatsTheme.typography.text1,
+                table = PortoExpatsTheme.typography.text1,
                 textLink = TextLinkStyles(
                     style = SpanStyle(
-                        color = KotlinConfTheme.colors.primaryText,
+                        color = PortoExpatsTheme.colors.primaryText,
                         textDecoration = TextDecoration.Underline,
                     ),
                 ),

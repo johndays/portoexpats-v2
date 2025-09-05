@@ -64,7 +64,7 @@ import org.jetbrains.kotlinconf.navigation.SpeakersScreen
 import org.jetbrains.kotlinconf.ui.components.Divider
 import org.jetbrains.kotlinconf.ui.components.MainNavDestination
 import org.jetbrains.kotlinconf.ui.components.MainNavigation
-import org.jetbrains.kotlinconf.ui.theme.KotlinConfTheme
+import org.jetbrains.kotlinconf.ui.theme.PortoExpatsTheme
 import org.koin.compose.koinInject
 
 @Composable
@@ -79,7 +79,7 @@ fun MainScreen(
     Column(
         Modifier
             .fillMaxSize()
-            .background(color = KotlinConfTheme.colors.mainBackground)
+            .background(color = PortoExpatsTheme.colors.mainBackground)
             .windowInsetsPadding(WindowInsets.safeDrawing)
     ) {
         val nestedNavController = rememberNavController()
@@ -194,7 +194,7 @@ private fun BottomNavigation(nestedNavController: NavHostController) {
         }
     }
 
-    Divider(thickness = 1.dp, color = KotlinConfTheme.colors.strokePale)
+    Divider(thickness = 1.dp, color = PortoExpatsTheme.colors.strokePale)
     MainNavigation(
         currentDestination = currentBottomNavDestination,
         destinations = bottomNavDestinations,

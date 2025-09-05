@@ -45,7 +45,7 @@ import org.jetbrains.kotlinconf.ui.components.MainHeaderTitleBar
 import org.jetbrains.kotlinconf.ui.components.SettingsItem
 import org.jetbrains.kotlinconf.ui.components.Text
 import org.jetbrains.kotlinconf.ui.components.TopMenuButton
-import org.jetbrains.kotlinconf.ui.theme.KotlinConfTheme
+import org.jetbrains.kotlinconf.ui.theme.PortoExpatsTheme
 import org.jetbrains.kotlinconf.utils.DebugLogger
 import org.jetbrains.kotlinconf.utils.Logger
 import org.jetbrains.kotlinconf.utils.bottomInsetPadding
@@ -69,7 +69,7 @@ fun DeveloperMenuScreen(
         Column(
             Modifier
                 .fillMaxSize()
-                .background(color = KotlinConfTheme.colors.mainBackground)
+                .background(color = PortoExpatsTheme.colors.mainBackground)
                 .padding(topInsetPadding() + bottomInsetPadding())
         ) {
             MainHeaderTitleBar(
@@ -83,7 +83,7 @@ fun DeveloperMenuScreen(
                 }
             )
 
-            Divider(thickness = 1.dp, color = KotlinConfTheme.colors.strokePale)
+            Divider(thickness = 1.dp, color = PortoExpatsTheme.colors.strokePale)
 
             if (!showWarning) {
                 Column(
@@ -95,7 +95,7 @@ fun DeveloperMenuScreen(
                 ) {
                     Text(
                         "Modifying any of these settings will move you from the production backend to the staging backend automatically.",
-                        color = KotlinConfTheme.colors.primaryText,
+                        color = PortoExpatsTheme.colors.primaryText,
                     )
 
                     SettingsItem(
@@ -161,7 +161,7 @@ fun DeveloperMenuScreen(
                     )
                 }
 
-                Divider(thickness = 1.dp, color = KotlinConfTheme.colors.strokePale)
+                Divider(thickness = 1.dp, color = PortoExpatsTheme.colors.strokePale)
 
                 val flagsManager = koinInject<FlagsManager>()
                 Row(
@@ -197,7 +197,7 @@ fun DeveloperMenuScreen(
             Box(
                 modifier = Modifier
                     .fillMaxSize()
-                    .background(KotlinConfTheme.colors.mainBackground)
+                    .background(PortoExpatsTheme.colors.mainBackground)
                     .padding(24.dp),
                 contentAlignment = Alignment.Center
             ) {
@@ -214,14 +214,14 @@ fun DeveloperMenuScreen(
                     Spacer(Modifier.height(24.dp))
                     Text(
                         text = "Warning!",
-                        style = KotlinConfTheme.typography.h2.copy(textAlign = TextAlign.Center),
-                        color = KotlinConfTheme.colors.primaryText,
+                        style = PortoExpatsTheme.typography.h2.copy(textAlign = TextAlign.Center),
+                        color = PortoExpatsTheme.colors.primaryText,
                     )
                     Spacer(Modifier.height(24.dp))
                     Text(
                         text = "DO NOT USE THIS MENU while you're trying to use the app at the conference. The Developer Menu is available only for testing purposes. Changing settings here may lead to data loss, unpredictable behavior, bugs, and making Kodee sad. ",
-                        style = KotlinConfTheme.typography.text1.copy(textAlign = TextAlign.Center),
-                        color = KotlinConfTheme.colors.primaryText,
+                        style = PortoExpatsTheme.typography.text1.copy(textAlign = TextAlign.Center),
+                        color = PortoExpatsTheme.colors.primaryText,
                         modifier = Modifier.widthIn(max = 440.dp)
                     )
                     Spacer(Modifier.height(24.dp))

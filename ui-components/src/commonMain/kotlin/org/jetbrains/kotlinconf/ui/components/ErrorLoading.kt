@@ -55,7 +55,7 @@ import kotlinx.coroutines.withContext
 import org.jetbrains.compose.resources.stringResource
 import org.jetbrains.compose.resources.vectorResource
 import org.jetbrains.compose.ui.tooling.preview.Preview
-import org.jetbrains.kotlinconf.ui.theme.KotlinConfTheme
+import org.jetbrains.kotlinconf.ui.theme.PortoExpatsTheme
 import org.jetbrains.kotlinconf.ui.theme.PreviewHelper
 import org.jetbrains.kotlinconf.ui.theme.UI
 import kotlin.math.PI
@@ -156,9 +156,9 @@ private fun ErrorText(
 ) {
     Text(
         message,
-        color = KotlinConfTheme.colors.secondaryText,
+        color = PortoExpatsTheme.colors.secondaryText,
         modifier = modifier.widthIn(max = 220.dp),
-        style = KotlinConfTheme.typography.text1.copy(
+        style = PortoExpatsTheme.typography.text1.copy(
             textAlign = TextAlign.Center,
         )
     )

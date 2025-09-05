@@ -9,18 +9,18 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.style.TextOverflow
-import org.jetbrains.kotlinconf.ui.theme.KotlinConfTheme
+import org.jetbrains.kotlinconf.ui.theme.PortoExpatsTheme
 
 /**
- * A simple text component that uses defaults from [KotlinConfTheme],
+ * A simple text component that uses defaults from [PortoExpatsTheme],
  * and accepts a simple [color] parameter to set the text color.
  */
 @Composable
 fun Text(
     text: String,
     modifier: Modifier = Modifier,
-    color: Color = KotlinConfTheme.colors.primaryText,
-    style: TextStyle = KotlinConfTheme.typography.text1,
+    color: Color = PortoExpatsTheme.colors.primaryText,
+    style: TextStyle = PortoExpatsTheme.typography.text1,
     maxLines: Int = Int.MAX_VALUE,
     selectable: Boolean = false,
 ) {
@@ -38,8 +38,8 @@ fun Text(
 fun Text(
     text: AnnotatedString,
     modifier: Modifier = Modifier,
-    color: Color = KotlinConfTheme.colors.primaryText,
-    style: TextStyle = KotlinConfTheme.typography.text1,
+    color: Color = PortoExpatsTheme.colors.primaryText,
+    style: TextStyle = PortoExpatsTheme.typography.text1,
     maxLines: Int = Int.MAX_VALUE,
     selectable: Boolean = false,
     inlineContent: Map<String, InlineTextContent> = mapOf(),

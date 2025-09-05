@@ -21,7 +21,7 @@ import androidx.compose.ui.semantics.role
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.unit.dp
 import org.jetbrains.compose.ui.tooling.preview.Preview
-import org.jetbrains.kotlinconf.ui.theme.KotlinConfTheme
+import org.jetbrains.kotlinconf.ui.theme.PortoExpatsTheme
 import org.jetbrains.kotlinconf.ui.theme.PreviewHelper
 
 private val ButtonShape = RoundedCornerShape(size = 100.dp)
@@ -35,16 +35,16 @@ fun Button(
     enabled: Boolean = true,
 ) {
     val backgroundColor by animateColorAsState(
-        if (primary) KotlinConfTheme.colors.primaryBackground
+        if (primary) PortoExpatsTheme.colors.primaryBackground
         else Color.Transparent
     )
     val borderColor by animateColorAsState(
         if (primary) Color.Transparent
-        else KotlinConfTheme.colors.strokeHalf
+        else PortoExpatsTheme.colors.strokeHalf
     )
     val textColor by animateColorAsState(
-        if (primary) KotlinConfTheme.colors.primaryTextInverted
-        else KotlinConfTheme.colors.primaryText
+        if (primary) PortoExpatsTheme.colors.primaryTextInverted
+        else PortoExpatsTheme.colors.primaryText
     )
     val alpha by animateFloatAsState(if (enabled) 1f else 0.5f)
 
@@ -62,7 +62,7 @@ fun Button(
     ) {
         Text(
             label,
-            style = KotlinConfTheme.typography.text1,
+            style = PortoExpatsTheme.typography.text1,
             color = textColor,
         )
     }

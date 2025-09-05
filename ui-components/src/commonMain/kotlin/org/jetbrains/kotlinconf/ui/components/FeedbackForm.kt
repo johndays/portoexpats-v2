@@ -38,7 +38,7 @@ import kotlinconfapp.ui_components.generated.resources.feedback_form_send
 import kotlinconfapp.ui_components.generated.resources.feedback_form_type_something
 import org.jetbrains.compose.resources.stringResource
 import org.jetbrains.compose.ui.tooling.preview.Preview
-import org.jetbrains.kotlinconf.ui.theme.KotlinConfTheme
+import org.jetbrains.kotlinconf.ui.theme.PortoExpatsTheme
 import org.jetbrains.kotlinconf.ui.theme.PreviewHelper
 
 @Composable
@@ -54,18 +54,18 @@ fun FeedbackForm(
     val focused by interactionSource.collectIsFocusedAsState()
 
     val verticalBorderColor by animateColorAsState(
-        if (focused) KotlinConfTheme.colors.strokeInputFocus
+        if (focused) PortoExpatsTheme.colors.strokeInputFocus
         else Color.Transparent,
         animationSpec = spring(stiffness = StiffnessHigh),
     )
     val horizontalBorderColor by animateColorAsState(
-        if (focused) KotlinConfTheme.colors.strokeInputFocus
-        else KotlinConfTheme.colors.strokePale,
+        if (focused) PortoExpatsTheme.colors.strokeInputFocus
+        else PortoExpatsTheme.colors.strokePale,
         animationSpec = spring(stiffness = StiffnessHigh),
     )
     val fieldBackgroundColor by animateColorAsState(
-        if (past) KotlinConfTheme.colors.mainBackground
-        else KotlinConfTheme.colors.tileBackground,
+        if (past) PortoExpatsTheme.colors.mainBackground
+        else PortoExpatsTheme.colors.tileBackground,
     )
 
     Box(modifier.fillMaxWidth().onKeyEvent { true }) {
@@ -73,9 +73,9 @@ fun FeedbackForm(
             value = feedbackText,
             onValueChange = onFeedbackTextChange,
             interactionSource = interactionSource,
-            textStyle = KotlinConfTheme.typography.text1
-                .copy(color = KotlinConfTheme.colors.primaryText),
-            cursorBrush = SolidColor(KotlinConfTheme.colors.primaryText),
+            textStyle = PortoExpatsTheme.typography.text1
+                .copy(color = PortoExpatsTheme.colors.primaryText),
+            cursorBrush = SolidColor(PortoExpatsTheme.colors.primaryText),
             decorationBox = { innerTextField ->
                 Box(
                     Modifier
@@ -128,8 +128,8 @@ fun FeedbackForm(
                     ) {
                         Text(
                             text = stringResource(UiRes.string.feedback_form_type_something),
-                            style = KotlinConfTheme.typography.text1,
-                            color = KotlinConfTheme.colors.placeholderText
+                            style = PortoExpatsTheme.typography.text1,
+                            color = PortoExpatsTheme.colors.placeholderText
                         )
                     }
                 }

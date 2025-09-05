@@ -15,7 +15,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.unit.dp
 import coil3.compose.AsyncImage
-import org.jetbrains.kotlinconf.ui.theme.KotlinConfTheme
+import org.jetbrains.kotlinconf.ui.theme.PortoExpatsTheme
 
 @Composable
 fun NewsCard(
@@ -29,7 +29,7 @@ fun NewsCard(
         modifier = modifier
             .fillMaxWidth()
             .clip(RoundedCornerShape(8.dp))
-            .background(color = KotlinConfTheme.colors.tileBackground)
+            .background(color = PortoExpatsTheme.colors.tileBackground)
             .clickable(onClick = onClick)
     ) {
         if (photoUrl != null) {
@@ -40,20 +40,20 @@ fun NewsCard(
                 modifier = Modifier
                     .fillMaxWidth()
                     .heightIn(max = 140.dp)
-                    .background(KotlinConfTheme.colors.purpleText),
+                    .background(PortoExpatsTheme.colors.purpleText),
             )
         }
         Column(Modifier.fillMaxWidth().padding(16.dp)) {
             Text(
                 text = date,
-                style = KotlinConfTheme.typography.text2,
-                color = KotlinConfTheme.colors.secondaryText,
+                style = PortoExpatsTheme.typography.text2,
+                color = PortoExpatsTheme.colors.secondaryText,
             )
             Spacer(modifier = Modifier.size(4.dp))
             Text(
                 text = title,
-                style = KotlinConfTheme.typography.h3,
-                color = KotlinConfTheme.colors.primaryText,
+                style = PortoExpatsTheme.typography.h3,
+                color = PortoExpatsTheme.colors.primaryText,
             )
         }
     }

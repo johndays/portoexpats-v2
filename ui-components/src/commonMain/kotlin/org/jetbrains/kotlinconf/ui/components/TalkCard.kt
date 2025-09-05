@@ -82,7 +82,7 @@ import org.jetbrains.compose.resources.painterResource
 import org.jetbrains.compose.resources.stringResource
 import org.jetbrains.compose.resources.vectorResource
 import org.jetbrains.compose.ui.tooling.preview.Preview
-import org.jetbrains.kotlinconf.ui.theme.KotlinConfTheme
+import org.jetbrains.kotlinconf.ui.theme.PortoExpatsTheme
 import org.jetbrains.kotlinconf.ui.theme.PreviewHelper
 
 @Composable
@@ -99,8 +99,8 @@ internal fun buildHighlightedString(
             if (!range.isEmpty()) {
                 addStyle(
                     style = SpanStyle(
-                        color = KotlinConfTheme.colors.primaryTextInverted,
-                        background = KotlinConfTheme.colors.primaryBackground,
+                        color = PortoExpatsTheme.colors.primaryTextInverted,
+                        background = PortoExpatsTheme.colors.primaryBackground,
                     ),
                     start = range.first,
                     end = range.last + 1,
@@ -141,18 +141,18 @@ fun TalkCard(
     modifier: Modifier = Modifier,
 ) {
     val backgroundColor by animateColorAsState(
-        if (status == TalkStatus.Past) KotlinConfTheme.colors.cardBackgroundPast
+        if (status == TalkStatus.Past) PortoExpatsTheme.colors.cardBackgroundPast
         else Color.Transparent,
         animationSpec = tween(1000),
     )
     val textColor by animateColorAsState(
-        if (status == TalkStatus.Past) KotlinConfTheme.colors.secondaryText
-        else KotlinConfTheme.colors.primaryText,
+        if (status == TalkStatus.Past) PortoExpatsTheme.colors.secondaryText
+        else PortoExpatsTheme.colors.primaryText,
         animationSpec = tween(1000),
     )
     val borderColor by animateColorAsState(
-        if (bookmarked) KotlinConfTheme.colors.strokeHalf
-        else KotlinConfTheme.colors.strokePale,
+        if (bookmarked) PortoExpatsTheme.colors.strokeHalf
+        else PortoExpatsTheme.colors.strokePale,
         animationSpec = tween(1000),
     )
 
@@ -178,7 +178,7 @@ fun TalkCard(
         Spacer(Modifier.weight(1f))
         Divider(
             thickness = 1.dp,
-            color = KotlinConfTheme.colors.strokePale,
+            color = PortoExpatsTheme.colors.strokePale,
         )
         TimeBlock(
             location = location,
@@ -195,7 +195,7 @@ fun TalkCard(
         ) {
             Divider(
                 thickness = 1.dp,
-                color = KotlinConfTheme.colors.strokePale,
+                color = PortoExpatsTheme.colors.strokePale,
             )
             FeedbackBlock(
                 status = status,
@@ -242,8 +242,8 @@ private fun TopBlock(
             Spacer(Modifier.width(8.dp))
 
             val iconColor by animateColorAsState(
-                if (bookmarked) KotlinConfTheme.colors.orangeText
-                else KotlinConfTheme.colors.primaryText
+                if (bookmarked) PortoExpatsTheme.colors.orangeText
+                else PortoExpatsTheme.colors.primaryText
             )
             val stateDesc = stringResource(
                 resource =  if (bookmarked)
@@ -286,8 +286,8 @@ private fun TopBlock(
         }
         Text(
             text = buildHighlightedString(speakers, speakerHighlights),
-            color = KotlinConfTheme.colors.secondaryText,
-            style = KotlinConfTheme.typography.text2,
+            color = PortoExpatsTheme.colors.secondaryText,
+            style = PortoExpatsTheme.typography.text2,
             maxLines = 1,
         )
     }
@@ -325,7 +325,7 @@ private fun TalkTitle(
         } else {
             title
         },
-        style = KotlinConfTheme.typography.h3,
+        style = PortoExpatsTheme.typography.h3,
         color = textColor,
         maxLines = 2,
         inlineContent = if (hasIcon) talkCardTitleInlineContent(status) else emptyMap(),
@@ -351,8 +351,8 @@ private fun talkCardTitleInlineContent(status: TalkStatus): Map<String, InlineTe
 @Composable
 private fun InlineIconContent(status: TalkStatus, placeholder: String) {
     val textColor by animateColorAsState(
-        if (status == TalkStatus.Past) KotlinConfTheme.colors.secondaryText
-        else KotlinConfTheme.colors.accentText,
+        if (status == TalkStatus.Past) PortoExpatsTheme.colors.secondaryText
+        else PortoExpatsTheme.colors.accentText,
         animationSpec = tween(1000),
     )
     Icon(
@@ -388,7 +388,7 @@ private fun TimeBlock(
     ) {
         Text(
             text = location,
-            style = KotlinConfTheme.typography.text2,
+            style = PortoExpatsTheme.typography.text2,
             color = textColor,
         )
 
@@ -397,8 +397,8 @@ private fun TimeBlock(
         if (timeNote != null) {
             Text(
                 text = timeNote,
-                style = KotlinConfTheme.typography.text2,
-                color = KotlinConfTheme.colors.noteText,
+                style = PortoExpatsTheme.typography.text2,
+                color = PortoExpatsTheme.colors.noteText,
                 maxLines = 1,
             )
         }
@@ -412,7 +412,7 @@ private fun TimeBlock(
                 modifier = Modifier.size(16.dp),
                 painter = painterResource(UiRes.drawable.lightning_16_fill),
                 contentDescription = stringResource(UiRes.string.lightning_talk),
-                tint = KotlinConfTheme.colors.orangeText,
+                tint = PortoExpatsTheme.colors.orangeText,
             )
         }
 
@@ -422,7 +422,7 @@ private fun TimeBlock(
         ) {
             Text(
                 text = it,
-                style = KotlinConfTheme.typography.text2,
+                style = PortoExpatsTheme.typography.text2,
                 color = textColor,
                 maxLines = 1,
             )
@@ -499,8 +499,8 @@ private fun FeedbackBlock(
                             if (isWorkshop) UiRes.string.talk_card_how_was_the_workshop
                             else UiRes.string.talk_card_how_was_the_talk
                         ),
-                        style = KotlinConfTheme.typography.text2,
-                        color = KotlinConfTheme.colors.primaryText,
+                        style = PortoExpatsTheme.typography.text2,
+                        color = PortoExpatsTheme.colors.primaryText,
                         maxLines = 1,
                     )
                 }

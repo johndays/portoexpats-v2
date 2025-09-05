@@ -13,7 +13,7 @@ import org.jetbrains.kotlinconf.EVENT_TIME_ZONE
 import org.jetbrains.kotlinconf.FeedbackInfo
 import org.jetbrains.kotlinconf.VoteInfo
 import org.jetbrains.kotlinconf.Votes
-import org.jetbrains.kotlinconf.backend.repositories.KotlinConfRepository
+import org.jetbrains.kotlinconf.backend.repositories.PortoExpatsRepository
 import org.jetbrains.kotlinconf.backend.services.SessionizeService
 import org.jetbrains.kotlinconf.backend.services.TimeService
 import org.jetbrains.kotlinconf.backend.utils.ConferenceConfig
@@ -31,7 +31,7 @@ Accept: application/json
 Authorization: Bearer 1238476512873162837
 */
 fun Route.votingRoutes() {
-    val repository by inject<KotlinConfRepository>()
+    val repository by inject<PortoExpatsRepository>()
     val config: ConferenceConfig by inject()
     val sessionize: SessionizeService by inject()
     val timeService: TimeService by inject()

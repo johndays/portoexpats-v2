@@ -23,7 +23,7 @@ import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.semantics.clearAndSetSemantics
 import androidx.compose.ui.unit.dp
 import org.jetbrains.compose.ui.tooling.preview.Preview
-import org.jetbrains.kotlinconf.ui.theme.KotlinConfTheme
+import org.jetbrains.kotlinconf.ui.theme.PortoExpatsTheme
 import org.jetbrains.kotlinconf.ui.theme.PreviewHelper
 
 private val SettingsItemShape = RoundedCornerShape(8.dp)
@@ -42,7 +42,7 @@ fun SettingsItem(
         modifier
             .fillMaxWidth()
             .clip(SettingsItemShape)
-            .background(KotlinConfTheme.colors.tileBackground)
+            .background(PortoExpatsTheme.colors.tileBackground)
             .toggleable(
                 value = enabled,
                 enabled = true,
@@ -61,13 +61,13 @@ fun SettingsItem(
         ) {
             Text(
                 text = title,
-                style = KotlinConfTheme.typography.h3,
+                style = PortoExpatsTheme.typography.h3,
             )
             if (note != null) {
                 Text(
                     text = note,
-                    style = KotlinConfTheme.typography.text2,
-                    color = KotlinConfTheme.colors.secondaryText,
+                    style = PortoExpatsTheme.typography.text2,
+                    color = PortoExpatsTheme.colors.secondaryText,
                 )
             }
         }

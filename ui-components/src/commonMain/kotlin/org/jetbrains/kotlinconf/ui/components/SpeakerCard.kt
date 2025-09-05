@@ -22,7 +22,7 @@ import kotlinconfapp.ui_components.generated.resources.UiRes
 import kotlinconfapp.ui_components.generated.resources.kodee_emotion_neutral
 import org.jetbrains.compose.resources.painterResource
 import org.jetbrains.compose.ui.tooling.preview.Preview
-import org.jetbrains.kotlinconf.ui.theme.KotlinConfTheme
+import org.jetbrains.kotlinconf.ui.theme.PortoExpatsTheme
 import org.jetbrains.kotlinconf.ui.theme.PreviewHelper
 
 @Composable
@@ -49,14 +49,14 @@ fun SpeakerCard(
         Column {
             Text(
                 text = buildHighlightedString(name, nameHighlights),
-                style = KotlinConfTheme.typography.h3,
-                color = KotlinConfTheme.colors.primaryText,
+                style = PortoExpatsTheme.typography.h3,
+                color = PortoExpatsTheme.colors.primaryText,
             )
             Spacer(modifier = Modifier.size(6.dp))
             Text(
                 text = buildHighlightedString(title, titleHighlights),
-                style = KotlinConfTheme.typography.text2,
-                color = KotlinConfTheme.colors.secondaryText,
+                style = PortoExpatsTheme.typography.text2,
+                color = PortoExpatsTheme.colors.secondaryText,
             )
         }
     }
@@ -75,7 +75,7 @@ fun SpeakerAvatar(
         contentDescription = null,
         modifier = modifier
             .clip(RoundedCornerShape(8.dp))
-            .background(KotlinConfTheme.colors.tileBackground),
+            .background(PortoExpatsTheme.colors.tileBackground),
         contentScale = ContentScale.Crop,
         error = painterResource(UiRes.drawable.kodee_emotion_neutral),
     )

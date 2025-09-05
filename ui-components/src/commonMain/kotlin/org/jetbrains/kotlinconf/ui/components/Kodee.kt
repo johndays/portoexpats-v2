@@ -33,7 +33,7 @@ import kotlinconfapp.ui_components.generated.resources.kodee_small_positive_outl
 import org.jetbrains.compose.resources.stringResource
 import org.jetbrains.compose.resources.vectorResource
 import org.jetbrains.compose.ui.tooling.preview.Preview
-import org.jetbrains.kotlinconf.ui.theme.KotlinConfTheme
+import org.jetbrains.kotlinconf.ui.theme.PortoExpatsTheme
 import org.jetbrains.kotlinconf.ui.theme.PreviewHelper
 
 enum class Emotion {
@@ -91,7 +91,7 @@ fun KodeeIconLarge(
             Emotion.Positive -> UiRes.drawable.kodee_large_positive_selected
         }
     } else {
-        if (KotlinConfTheme.colors.isDark) {
+        if (PortoExpatsTheme.colors.isDark) {
             when (emotion) {
                 Emotion.Negative -> UiRes.drawable.kodee_large_negative_dark
                 Emotion.Neutral -> UiRes.drawable.kodee_large_neutral_dark
