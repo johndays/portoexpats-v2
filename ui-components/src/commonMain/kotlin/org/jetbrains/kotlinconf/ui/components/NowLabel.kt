@@ -15,7 +15,7 @@ import kotlinconfapp.ui_components.generated.resources.UiRes
 import kotlinconfapp.ui_components.generated.resources.now
 import org.jetbrains.compose.resources.stringResource
 import org.jetbrains.compose.ui.tooling.preview.Preview
-import org.jetbrains.kotlinconf.ui.theme.KotlinConfTheme
+import org.jetbrains.kotlinconf.ui.theme.PortoExpatsTheme
 import org.jetbrains.kotlinconf.ui.theme.PreviewHelper
 
 
@@ -28,13 +28,13 @@ fun NowLabel(modifier: Modifier = Modifier) {
         Box(
             Modifier.size(10.dp)
                 .clip(CircleShape)
-                .background(KotlinConfTheme.colors.accentText)
+                .background(PortoExpatsTheme.colors.accentText)
         )
         Spacer(Modifier.size(4.dp))
         Text(
             text = stringResource(UiRes.string.now),
-            color = KotlinConfTheme.colors.accentText,
-            style = KotlinConfTheme.typography.text2,
+            color = PortoExpatsTheme.colors.accentText,
+            style = PortoExpatsTheme.typography.text2,
             maxLines = 1,
         )
     }

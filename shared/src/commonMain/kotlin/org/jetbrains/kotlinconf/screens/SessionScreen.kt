@@ -82,7 +82,7 @@ import org.jetbrains.kotlinconf.ui.components.PageTitle
 import org.jetbrains.kotlinconf.ui.components.SpeakerCard
 import org.jetbrains.kotlinconf.ui.components.Text
 import org.jetbrains.kotlinconf.ui.components.TopMenuButton
-import org.jetbrains.kotlinconf.ui.theme.KotlinConfTheme
+import org.jetbrains.kotlinconf.ui.theme.PortoExpatsTheme
 import org.jetbrains.kotlinconf.utils.FadingAnimationSpec
 import org.jetbrains.kotlinconf.utils.bottomInsetPadding
 import org.jetbrains.kotlinconf.utils.topInsetPadding
@@ -117,7 +117,7 @@ fun SessionScreen(
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(color = KotlinConfTheme.colors.mainBackground)
+            .background(color = PortoExpatsTheme.colors.mainBackground)
             .padding(topInsetPadding())
     ) {
         MainHeaderTitleBar(
@@ -133,7 +133,7 @@ fun SessionScreen(
 
         Divider(
             thickness = 1.dp,
-            color = KotlinConfTheme.colors.strokePale
+            color = PortoExpatsTheme.colors.strokePale
         )
 
         AnimatedContent(
@@ -229,7 +229,7 @@ fun SessionScreen(
 
                             Text(
                                 text = session.description,
-                                style = KotlinConfTheme.typography.text1,
+                                style = PortoExpatsTheme.typography.text1,
                                 selectable = true,
                             )
 
@@ -274,11 +274,11 @@ private fun FeedbackPanel(
             .padding(vertical = 8.dp)
             .border(
                 width = 1.dp,
-                color = KotlinConfTheme.colors.strokePale,
+                color = PortoExpatsTheme.colors.strokePale,
                 shape = RoundedCornerShape(8.dp),
             )
             .clip(RoundedCornerShape(8.dp))
-            .background(KotlinConfTheme.colors.cardBackgroundPast),
+            .background(PortoExpatsTheme.colors.cardBackgroundPast),
         horizontalAlignment = Alignment.CenterHorizontally,
     ) {
         Column(
@@ -287,8 +287,8 @@ private fun FeedbackPanel(
         ) {
             Text(
                 text = feedbackQuestion,
-                style = KotlinConfTheme.typography.text2,
-                color = KotlinConfTheme.colors.primaryText,
+                style = PortoExpatsTheme.typography.text2,
+                color = PortoExpatsTheme.colors.primaryText,
             )
             Spacer(Modifier.height(16.dp))
             Row(
@@ -331,7 +331,7 @@ private fun FeedbackPanel(
             exit = fadeOut(animationSpec = tween(100)) + shrinkVertically(clip = false, shrinkTowards = Alignment.Top),
         ) {
             Column(Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally) {
-                Divider(thickness = 1.dp, color = KotlinConfTheme.colors.strokePale)
+                Divider(thickness = 1.dp, color = PortoExpatsTheme.colors.strokePale)
 
                 val iconRotation by animateFloatAsState(if (feedbackExpanded) 0f else 180f)
                 Action(
@@ -387,7 +387,7 @@ private fun RoomSection(
         if (rooms[roomName] == null) {
             Text(
                 text = roomName,
-                style = KotlinConfTheme.typography.h3,
+                style = PortoExpatsTheme.typography.h3,
             )
         } else {
             val stateDesc = stringResource(

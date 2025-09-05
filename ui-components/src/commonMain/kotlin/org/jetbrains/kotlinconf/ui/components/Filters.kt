@@ -56,7 +56,7 @@ import kotlinconfapp.ui_components.generated.resources.up_24
 import org.jetbrains.compose.resources.pluralStringResource
 import org.jetbrains.compose.resources.stringResource
 import org.jetbrains.compose.ui.tooling.preview.Preview
-import org.jetbrains.kotlinconf.ui.theme.KotlinConfTheme
+import org.jetbrains.kotlinconf.ui.theme.PortoExpatsTheme
 import org.jetbrains.kotlinconf.ui.theme.PreviewHelper
 
 enum class FilterItemType {
@@ -80,7 +80,7 @@ fun Filters(
     Column(
         modifier = modifier
             .clip(RoundedCornerShape(8.dp))
-            .background(KotlinConfTheme.colors.tileBackground),
+            .background(PortoExpatsTheme.colors.tileBackground),
     ) {
         val stateDesc = stringResource(
             if (isExpanded) UiRes.string.action_state_description_expanded
@@ -130,13 +130,13 @@ fun Filters(
                         contentAlignment = Alignment.Center,
                         modifier = Modifier.size(24.dp)
                             .clip(CircleShape)
-                            .background(KotlinConfTheme.colors.primaryBackground)
+                            .background(PortoExpatsTheme.colors.primaryBackground)
                     ) {
                         val tagCountContentDescription = pluralStringResource(UiRes.plurals.filter_by_tags_tag_count, count, count)
                         Text(
                             text = count.toString(),
-                            color = KotlinConfTheme.colors.primaryTextInverted,
-                            style = KotlinConfTheme.typography.text2,
+                            color = PortoExpatsTheme.colors.primaryTextInverted,
+                            style = PortoExpatsTheme.typography.text2,
                             modifier = Modifier.semantics {
                                 contentDescription = tagCountContentDescription
                             }
@@ -189,8 +189,8 @@ private fun FilterItemGroup(
     ) {
         Text(
             text = title,
-            style = KotlinConfTheme.typography.text2,
-            color = KotlinConfTheme.colors.noteText,
+            style = PortoExpatsTheme.typography.text2,
+            color = PortoExpatsTheme.colors.noteText,
             modifier = Modifier.semantics {
                 heading()
             }

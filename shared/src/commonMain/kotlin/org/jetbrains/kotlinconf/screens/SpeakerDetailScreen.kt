@@ -38,7 +38,7 @@ import org.jetbrains.kotlinconf.ui.components.Text
 import org.jetbrains.kotlinconf.ui.components.TalkCard
 import org.jetbrains.kotlinconf.ui.components.TalkStatus
 import org.jetbrains.kotlinconf.ui.components.TopMenuButton
-import org.jetbrains.kotlinconf.ui.theme.KotlinConfTheme
+import org.jetbrains.kotlinconf.ui.theme.PortoExpatsTheme
 import org.jetbrains.kotlinconf.utils.FadingAnimationSpec
 import org.jetbrains.kotlinconf.utils.bottomInsetPadding
 import org.jetbrains.kotlinconf.utils.topInsetPadding
@@ -58,7 +58,7 @@ fun SpeakerDetailScreen(
     Column(
         Modifier
             .fillMaxSize()
-            .background(color = KotlinConfTheme.colors.mainBackground)
+            .background(color = PortoExpatsTheme.colors.mainBackground)
             .padding(topInsetPadding())
     ) {
         MainHeaderTitleBar(
@@ -71,7 +71,7 @@ fun SpeakerDetailScreen(
                 )
             }
         )
-        Divider(thickness = 1.dp, color = KotlinConfTheme.colors.strokePale)
+        Divider(thickness = 1.dp, color = PortoExpatsTheme.colors.strokePale)
 
         AnimatedContent(
             targetState = speaker,
@@ -95,8 +95,8 @@ fun SpeakerDetailScreen(
                 ) {
                     Text(
                         text = currentSpeaker.name,
-                        style = KotlinConfTheme.typography.h2,
-                        color = KotlinConfTheme.colors.primaryText,
+                        style = PortoExpatsTheme.typography.h2,
+                        color = PortoExpatsTheme.colors.primaryText,
                         selectable = true,
                         modifier = Modifier.semantics {
                             heading()
@@ -107,8 +107,8 @@ fun SpeakerDetailScreen(
 
                     Text(
                         text = currentSpeaker.position,
-                        style = KotlinConfTheme.typography.text2,
-                        color = KotlinConfTheme.colors.secondaryText,
+                        style = PortoExpatsTheme.typography.text2,
+                        color = PortoExpatsTheme.colors.secondaryText,
                         selectable = true,
                     )
 
@@ -124,8 +124,8 @@ fun SpeakerDetailScreen(
 
                     Text(
                         text = currentSpeaker.description,
-                        style = KotlinConfTheme.typography.text2,
-                        color = KotlinConfTheme.colors.longText,
+                        style = PortoExpatsTheme.typography.text2,
+                        color = PortoExpatsTheme.colors.longText,
                         selectable = true,
                     )
 

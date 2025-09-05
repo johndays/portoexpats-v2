@@ -1,6 +1,6 @@
 **Version 1.2, effective from January 23, 2025**
 
-In this KotlinConf App Privacy Notice (“Privacy Notice”), we describe the types of data, including Personal Data (collectively, "data"), that we and our associated companies collect from you when you use the KotlinConf app and the functionalities and services it offers (collectively, the "App"), how we and our associated companies use and disclose that data, and your options to access or update your data.
+In this PortoExpats App Privacy Notice (“Privacy Notice”), we describe the types of data, including Personal Data (collectively, "data"), that we and our associated companies collect from you when you use the PortoExpats app and the functionalities and services it offers (collectively, the "App"), how we and our associated companies use and disclose that data, and your options to access or update your data.
 
 The data controllers are JetBrains Expo B.V. with its business address at Gelrestraat 16, 1079 MZ Amsterdam, the Netherlands, and [its associated companies](https://www.jetbrains.com/company/contacts/#headquarters-international-sales): JetBrains N.V., JetBrains s.r.o. and JetBrains GmbH. 
 
@@ -12,7 +12,7 @@ The following definitions are used throughout this Privacy Notice:
 
 **JetBrains Website**. The website of JetBrains which can be found on [https://www.jetbrains.com/](https://www.jetbrains.com/). 
 
-**KotlinConf**. The official event by [JetBrains](https://www.jetbrains.com/) under the name KotlinConf of which more information can be directly found on the website [https://kotlinconf.com/](https://kotlinconf.com/).  
+**PortoExpats**. The official event by [JetBrains](https://www.jetbrains.com/) under the name PortoExpats of which more information can be directly found on the website [https://kotlinconf.com/](https://kotlinconf.com/).  
 
 **Personal Data** means any data relating to an identified or identifiable natural person.
 
@@ -23,7 +23,7 @@ All other capitalized terms used in this Privacy Notice shall have the same mean
 We collect data for various reasons as reflected in our [general Privacy Notice](https://www.jetbrains.com/legal/docs/privacy/privacy/) which can be found on the JetBrains Website, but for this App specifically we collect data for only the following reasons:  
 a) **To provide you with the basic functionalities of the App.** Upon your (re-)installation of the App we generate and collect a random ID, which is required to provide you with the basic functionalities and settings of this App, such as in any case the account management (used for the setup or management of a user’s account), the sending of notifications through the App and other processing connected with the use of this App. Please note that we do not collect, store or process any Personal Data, such as your Device ID, so we can’t trace the random ID back to any device or person. We use [Google Cloud](https://cloud.google.com/terms/cloud-privacy-notice) Platform, as third party service provider, acting as a data processor, to assist us in hosting and providing the App to you or in our operations. The legal basis for this data processing is the performance of a contract between you and us. 
 
-b) **To improve the App and KotlinConf.** We may collect anonymous data based on your use of the App and we may use feedback that you provide voluntarily through the App, in particular on the talks during KotlinConf, as applicable. We use such data to better understand the usage patterns of the App, the options it provides and the behavior, preferences and feedback of our KoltinConf audience. Collection of data based on your use of the App and feedback that you provide voluntarily through the App is done anonymously but if you decide to share any Personal Data in your feedback the legal basis for this data processing shall be your consent.
+b) **To improve the App and PortoExpats.** We may collect anonymous data based on your use of the App and we may use feedback that you provide voluntarily through the App, in particular on the talks during PortoExpats, as applicable. We use such data to better understand the usage patterns of the App, the options it provides and the behavior, preferences and feedback of our KoltinConf audience. Collection of data based on your use of the App and feedback that you provide voluntarily through the App is done anonymously but if you decide to share any Personal Data in your feedback the legal basis for this data processing shall be your consent.
 
 Categories of data involved in data processing include:
 

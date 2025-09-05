@@ -1,10 +1,10 @@
 [![JetBrains official project](http://jb.gg/badges/official.svg)](https://confluence.jetbrains.com/display/ALL/JetBrains+on+GitHub) 
 
-# KotlinConf App
+# PortoExpats App
 
-This repository contains the source code of the official application for [KotlinConf](https://kotlinconf.com/).
+This repository contains the source code of the official application for [PortoExpats](https://kotlinconf.com/).
 
-![The KotlinConf official application](docs/header.png)
+![The PortoExpats official application](docs/header.png)
 
 The application is written in Kotlin, sharing code between all of its platforms using [Kotlin Multiplatform](https://www.jetbrains.com/kotlin-multiplatform/).
 
@@ -25,7 +25,7 @@ To build the project locally:
 2. Open the project in IntelliJ IDEA or Android Studio.
 3. Run the desired platform
    * Android: use the `androidApp` run configuration
-   * iOS: use `KotlinConfAppScheme`
+   * iOS: use `PortoExpatsAppScheme`
    * Desktop: `./gradlew :shared:jvmRunHot -DmainClass=org.jetbrains.kotlinconf.MainKt`
    * Web: `./gradlew :shared:wasmJsBrowserDevelopmentRun `
    * Backend: `./gradlew :backend:run`

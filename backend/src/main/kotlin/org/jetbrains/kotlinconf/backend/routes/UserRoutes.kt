@@ -9,7 +9,7 @@ import io.ktor.server.routing.Route
 import io.ktor.server.routing.post
 import kotlinx.datetime.TimeZone
 import kotlinx.datetime.toLocalDateTime
-import org.jetbrains.kotlinconf.backend.repositories.KotlinConfRepository
+import org.jetbrains.kotlinconf.backend.repositories.PortoExpatsRepository
 import org.koin.ktor.ext.inject
 import kotlin.time.Clock
 import kotlin.time.ExperimentalTime
@@ -19,7 +19,7 @@ POST http://localhost:8080/sign
 1238476512873162837
  */
 fun Route.userRoutes() {
-    val repository by inject<KotlinConfRepository>()
+    val repository by inject<PortoExpatsRepository>()
 
     post("sign") {
         val userUUID = call.receive<String>()

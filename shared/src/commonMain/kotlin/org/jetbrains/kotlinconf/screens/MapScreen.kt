@@ -48,7 +48,7 @@ import org.jetbrains.kotlinconf.ui.components.Divider
 import org.jetbrains.kotlinconf.ui.components.MainHeaderTitleBar
 import org.jetbrains.kotlinconf.ui.components.Switcher
 import org.jetbrains.kotlinconf.ui.components.TopMenuButton
-import org.jetbrains.kotlinconf.ui.theme.KotlinConfTheme
+import org.jetbrains.kotlinconf.ui.theme.PortoExpatsTheme
 import org.jetbrains.kotlinconf.utils.topInsetPadding
 import kotlin.math.sqrt
 
@@ -102,7 +102,7 @@ private fun Offset.asSvgOffset(svg: Svg) = Offset(
 )
 
 private val Floor.resource: String
-    @Composable get() = if (KotlinConfTheme.colors.isDark) resourceDark else resourceLight
+    @Composable get() = if (PortoExpatsTheme.colors.isDark) resourceDark else resourceLight
 
 @Composable
 fun NestedMapScreen(
@@ -130,7 +130,7 @@ private fun MapScreenImpl(
         value = Svg(Res.readBytes(path))
     }
 
-    Column(modifier.fillMaxSize().background(color = KotlinConfTheme.colors.mainBackground)) {
+    Column(modifier.fillMaxSize().background(color = PortoExpatsTheme.colors.mainBackground)) {
         MainHeaderTitleBar(
             title = stringResource(Res.string.map_title),
             startContent = {
@@ -143,7 +143,7 @@ private fun MapScreenImpl(
                 }
             }
         )
-        Divider(thickness = 1.dp, color = KotlinConfTheme.colors.strokePale)
+        Divider(thickness = 1.dp, color = PortoExpatsTheme.colors.strokePale)
 
         Switcher(
             items = Floor.entries.map { stringResource(it.title) },

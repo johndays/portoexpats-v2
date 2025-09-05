@@ -45,7 +45,7 @@ import org.jetbrains.compose.resources.painterResource
 import org.jetbrains.compose.resources.stringResource
 import org.jetbrains.compose.resources.vectorResource
 import org.jetbrains.compose.ui.tooling.preview.Preview
-import org.jetbrains.kotlinconf.ui.theme.KotlinConfTheme
+import org.jetbrains.kotlinconf.ui.theme.PortoExpatsTheme
 import org.jetbrains.kotlinconf.ui.theme.PreviewHelper
 
 private const val iconId = "iconId'"
@@ -82,7 +82,7 @@ private fun InlineIconContent(placeholder: String) {
                 }
             ),
             contentDescription = null,
-            tint = KotlinConfTheme.colors.accentText,
+            tint = PortoExpatsTheme.colors.accentText,
             modifier = Modifier.fillMaxHeight(0.9f).aspectRatio(1f),
         )
     }
@@ -112,21 +112,21 @@ fun PageTitle(
                     modifier = Modifier.size(16.dp),
                     painter = painterResource(UiRes.drawable.lightning_16_fill),
                     contentDescription = null,
-                    tint = KotlinConfTheme.colors.orangeText,
+                    tint = PortoExpatsTheme.colors.orangeText,
                 )
             }
 
             Text(
                 text = time,
-                style = KotlinConfTheme.typography.h3,
-                color = KotlinConfTheme.colors.primaryText
+                style = PortoExpatsTheme.typography.h3,
+                color = PortoExpatsTheme.colors.primaryText
             )
 
             Spacer(Modifier.weight(1f))
 
             val iconTint by animateColorAsState(
-                if (bookmarked) KotlinConfTheme.colors.orangeText
-                else KotlinConfTheme.colors.primaryText
+                if (bookmarked) PortoExpatsTheme.colors.orangeText
+                else PortoExpatsTheme.colors.primaryText
             )
             Icon(
                 modifier = Modifier
@@ -167,8 +167,8 @@ fun PageTitle(
             } else {
                 AnnotatedString(title)
             },
-            style = KotlinConfTheme.typography.h1,
-            color = KotlinConfTheme.colors.primaryText,
+            style = PortoExpatsTheme.typography.h1,
+            color = PortoExpatsTheme.colors.primaryText,
             selectable = true,
             inlineContent = if (hasIcon) pageTitleInlineContent() else emptyMap(),
             modifier = Modifier.semantics { heading() }

@@ -26,7 +26,7 @@ import kotlinconfapp.ui_components.generated.resources.search_24
 import org.jetbrains.compose.resources.DrawableResource
 import org.jetbrains.compose.resources.painterResource
 import org.jetbrains.compose.ui.tooling.preview.Preview
-import org.jetbrains.kotlinconf.ui.theme.KotlinConfTheme
+import org.jetbrains.kotlinconf.ui.theme.PortoExpatsTheme
 import org.jetbrains.kotlinconf.ui.theme.PreviewHelper
 
 @Composable
@@ -64,12 +64,12 @@ fun TopMenuButton(
     modifier: Modifier = Modifier,
 ) {
     val backgroundColor by animateColorAsState(
-        if (selected) KotlinConfTheme.colors.primaryBackground
+        if (selected) PortoExpatsTheme.colors.primaryBackground
         else Color.Transparent
     )
     val iconColor by animateColorAsState(
-        if (selected) KotlinConfTheme.colors.primaryTextInverted
-        else KotlinConfTheme.colors.primaryText
+        if (selected) PortoExpatsTheme.colors.primaryTextInverted
+        else PortoExpatsTheme.colors.primaryText
     )
 
     TopMenuButtonImpl(
@@ -103,7 +103,7 @@ fun TopMenuButton(
         modifier = modifier,
         interactionModifier = Modifier.clickable(onClick = onClick),
         backgroundColor = Color.Transparent,
-        iconColor = KotlinConfTheme.colors.primaryText,
+        iconColor = PortoExpatsTheme.colors.primaryText,
     )
 }
 

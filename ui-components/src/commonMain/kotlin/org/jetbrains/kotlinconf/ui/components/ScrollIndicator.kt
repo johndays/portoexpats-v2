@@ -19,7 +19,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.unit.dp
 import kotlinx.coroutines.delay
 import org.jetbrains.compose.ui.tooling.preview.Preview
-import org.jetbrains.kotlinconf.ui.theme.KotlinConfTheme
+import org.jetbrains.kotlinconf.ui.theme.PortoExpatsTheme
 import org.jetbrains.kotlinconf.ui.theme.PreviewHelper
 import kotlin.time.Duration.Companion.milliseconds
 
@@ -44,7 +44,7 @@ fun ScrollIndicator(
                     .clip(ScrollIndicatorShape)
                     .height(8.dp)
                     .width(width)
-                    .background(KotlinConfTheme.colors.scrollIndicatorFill)
+                    .background(PortoExpatsTheme.colors.scrollIndicatorFill)
             )
         }
     }

@@ -5,7 +5,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import org.jetbrains.compose.ui.tooling.preview.Preview
-import org.jetbrains.kotlinconf.ui.theme.KotlinConfTheme
+import org.jetbrains.kotlinconf.ui.theme.PortoExpatsTheme
 import org.jetbrains.kotlinconf.ui.theme.PreviewHelper
 
 @Composable
@@ -15,7 +15,7 @@ fun ParagraphTitle(
 ) {
     Text(
         text = text,
-        style = KotlinConfTheme.typography.h2,
+        style = PortoExpatsTheme.typography.h2,
         modifier = modifier
             .padding(
                 top = 24.dp,

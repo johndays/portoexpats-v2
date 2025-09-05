@@ -30,7 +30,7 @@ import kotlinconfapp.ui_components.generated.resources.team_28_fill
 import org.jetbrains.compose.resources.DrawableResource
 import org.jetbrains.compose.resources.painterResource
 import org.jetbrains.compose.ui.tooling.preview.Preview
-import org.jetbrains.kotlinconf.ui.theme.KotlinConfTheme
+import org.jetbrains.kotlinconf.ui.theme.PortoExpatsTheme
 import org.jetbrains.kotlinconf.ui.theme.PreviewHelper
 import kotlin.reflect.KClass
 
@@ -46,8 +46,8 @@ private fun MainNavigationButton(
     modifier: Modifier = Modifier,
 ) {
     val iconColor by animateColorAsState(
-        if (selected) KotlinConfTheme.colors.primaryText
-        else KotlinConfTheme.colors.secondaryText
+        if (selected) PortoExpatsTheme.colors.primaryText
+        else PortoExpatsTheme.colors.secondaryText
     )
     Icon(
         modifier = modifier

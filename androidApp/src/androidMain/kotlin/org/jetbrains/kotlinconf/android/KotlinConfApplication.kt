@@ -7,7 +7,7 @@ import org.jetbrains.kotlinconf.initApp
 import org.jetbrains.kotlinconf.platformModule
 import org.jetbrains.kotlinconf.utils.AndroidLogger
 
-class KotlinConfApplication : Application() {
+class PortoExpatsApplication : Application() {
     override fun onCreate() {
         super.onCreate()
 

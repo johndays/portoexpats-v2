@@ -13,8 +13,8 @@ val BearerChecker = createRouteScopedPlugin("BearerChecker") {
         if (!authorization.startsWith(bearer)) return@onCall
 
         val token = authorization.removePrefix(bearer).trim()
-        call.authentication.principal(KotlinConfPrincipal(token))
+        call.authentication.principal(PortoExpatsPrincipal(token))
     }
 }
 
-class KotlinConfPrincipal(val token: String)
+class PortoExpatsPrincipal(val token: String)

@@ -46,7 +46,7 @@ import org.jetbrains.kotlinconf.ui.components.NormalErrorWithLoading
 import org.jetbrains.kotlinconf.ui.components.SpeakerCard
 import org.jetbrains.kotlinconf.ui.components.Text
 import org.jetbrains.kotlinconf.ui.components.TopMenuButton
-import org.jetbrains.kotlinconf.ui.theme.KotlinConfTheme
+import org.jetbrains.kotlinconf.ui.theme.PortoExpatsTheme
 import org.jetbrains.kotlinconf.utils.FadingAnimationSpec
 import org.koin.compose.viewmodel.koinViewModel
 import kotlinconfapp.ui_components.generated.resources.UiRes
@@ -74,7 +74,7 @@ fun SpeakersScreen(
         viewModel.setSearchText(searchText)
     }
 
-    Column(Modifier.fillMaxSize().background(color = KotlinConfTheme.colors.mainBackground)) {
+    Column(Modifier.fillMaxSize().background(color = PortoExpatsTheme.colors.mainBackground)) {
         MainHeaderContainer(
             state = searchState,
             titleContent = {
@@ -107,7 +107,7 @@ fun SpeakersScreen(
             }
         )
 
-        Divider(1.dp, KotlinConfTheme.colors.strokePale)
+        Divider(1.dp, PortoExpatsTheme.colors.strokePale)
 
         AnimatedContent(
             uiState,
@@ -139,8 +139,8 @@ fun SpeakersScreen(
                                         speakers.size,
                                         speakers.size
                                     ),
-                                    color = KotlinConfTheme.colors.secondaryText,
-                                    style = KotlinConfTheme.typography.text2,
+                                    color = PortoExpatsTheme.colors.secondaryText,
+                                    style = PortoExpatsTheme.typography.text2,
                                     modifier = Modifier
                                         .animateItem()
                                         .padding(horizontal = 12.dp)

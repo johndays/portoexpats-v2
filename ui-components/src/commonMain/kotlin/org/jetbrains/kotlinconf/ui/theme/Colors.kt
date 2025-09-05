@@ -57,7 +57,7 @@ class Colors(
     val toggleOff: Color,
 )
 
-val KotlinConfLightColors = Colors(
+val PortoExpatsLightColors = Colors(
     isDark = false,
 
     activeBackground = magenta20,
@@ -87,7 +87,7 @@ val KotlinConfLightColors = Colors(
     toggleOn = magenta100,
 )
 
-val KotlinConfDarkColors = Colors(
+val PortoExpatsDarkColors = Colors(
     isDark = true,
 
     activeBackground = magenta50,

@@ -14,9 +14,9 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.navigation.NavBackStackEntry
-import org.jetbrains.kotlinconf.navigation.KotlinConfNavHost
+import org.jetbrains.kotlinconf.navigation.PortoExpatsNavHost
 import org.jetbrains.kotlinconf.storage.ApplicationStorage
-import org.jetbrains.kotlinconf.ui.theme.KotlinConfTheme
+import org.jetbrains.kotlinconf.ui.theme.PortoExpatsTheme
 import org.koin.compose.koinInject
 import kotlin.jvm.JvmSuppressWildcards
 
@@ -44,17 +44,17 @@ fun App(
 
     val flags by koinInject<FlagsManager>().flags.collectAsStateWithLifecycle()
     CompositionLocalProvider(LocalFlags provides flags) {
-        KotlinConfTheme(
+        PortoExpatsTheme(
             darkTheme = isDarkTheme,
             rippleEnabled = LocalFlags.current.rippleEnabled,
         ) {
             Box(
                 Modifier
                     .fillMaxSize()
-                    .background(KotlinConfTheme.colors.mainBackground)
+                    .background(PortoExpatsTheme.colors.mainBackground)
             ) {
                 if (isOnboardingComplete != null) {
-                    KotlinConfNavHost(isOnboardingComplete, popEnterTransition, popExitTransition)
+                    PortoExpatsNavHost(isOnboardingComplete, popEnterTransition, popExitTransition)
                 }
             }
         }

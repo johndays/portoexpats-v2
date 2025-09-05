@@ -28,7 +28,7 @@ import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.semantics.clearAndSetSemantics
 import androidx.compose.ui.unit.dp
 import org.jetbrains.compose.ui.tooling.preview.Preview
-import org.jetbrains.kotlinconf.ui.theme.KotlinConfTheme
+import org.jetbrains.kotlinconf.ui.theme.PortoExpatsTheme
 import org.jetbrains.kotlinconf.ui.theme.PreviewHelper
 
 private val ToggleBackgroundShape = RoundedCornerShape(size = 100.dp)
@@ -46,8 +46,8 @@ fun Toggle(
     interactionSource: MutableInteractionSource = remember { MutableInteractionSource() },
 ) {
     val toggleColor by animateColorAsState(
-        if (enabled) KotlinConfTheme.colors.toggleOn
-        else KotlinConfTheme.colors.toggleOff
+        if (enabled) PortoExpatsTheme.colors.toggleOn
+        else PortoExpatsTheme.colors.toggleOff
     )
 
     Box(
@@ -77,7 +77,7 @@ fun Toggle(
                 .background(toggleColor)
         )
         val xOffset by animateDpAsState(if (enabled) ToggleWidth / 4 else -ToggleWidth / 4)
-        val thumbCenterColor = KotlinConfTheme.colors.mainBackground
+        val thumbCenterColor = PortoExpatsTheme.colors.mainBackground
         Box(
             Modifier
                 .offset(x = xOffset)

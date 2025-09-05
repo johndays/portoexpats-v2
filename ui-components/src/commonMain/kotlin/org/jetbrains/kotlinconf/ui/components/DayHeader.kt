@@ -21,7 +21,7 @@ import androidx.compose.ui.unit.sp
 import org.jetbrains.compose.ui.tooling.preview.Preview
 import org.jetbrains.kotlinconf.ui.theme.Brand.colorGradient
 import org.jetbrains.kotlinconf.ui.theme.JetBrainsSans
-import org.jetbrains.kotlinconf.ui.theme.KotlinConfTheme
+import org.jetbrains.kotlinconf.ui.theme.PortoExpatsTheme
 import org.jetbrains.kotlinconf.ui.theme.PreviewHelper
 import org.jetbrains.kotlinconf.ui.theme.UI.white60
 
@@ -69,18 +69,18 @@ fun DayHeader(
             ) {
                 Text(
                     month,
-                    style = KotlinConfTheme.typography.text2,
+                    style = PortoExpatsTheme.typography.text2,
                     color = white60,
                 )
                 Text(
                     day,
                     style = DayDateStyle,
-                    color = KotlinConfTheme.colors.primaryTextInverted,
+                    color = PortoExpatsTheme.colors.primaryTextInverted,
                     modifier = Modifier.widthIn(min = 72.dp),
                 )
                 Text(
                     "",
-                    style = KotlinConfTheme.typography.text2,
+                    style = PortoExpatsTheme.typography.text2,
                     color = Color.Transparent,
                 )
             }
@@ -88,7 +88,7 @@ fun DayHeader(
                 Text(
                     "-$day2",
                     style = DayDateStyle,
-                    color = KotlinConfTheme.colors.primaryTextInverted,
+                    color = PortoExpatsTheme.colors.primaryTextInverted,
                     modifier = Modifier.widthIn(min = 72.dp),
                 )
             }
@@ -97,12 +97,12 @@ fun DayHeader(
             Text(
                 line1,
                 style = DayHeaderStyle,
-                color = KotlinConfTheme.colors.primaryTextInverted,
+                color = PortoExpatsTheme.colors.primaryTextInverted,
             )
             Text(
                 line2,
                 style = DayHeaderStyle,
-                color = KotlinConfTheme.colors.primaryTextInverted,
+                color = PortoExpatsTheme.colors.primaryTextInverted,
             )
         }
     }

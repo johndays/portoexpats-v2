@@ -11,7 +11,7 @@
     <!-- Screen resources -->
 
     <string name="about_app_title">About the app</string>
-    <string name="about_app_description">The KotlinConf application is developed by the JetBrains team using Kotlin Multiplatform for shared logic and Compose Multiplatform for UI across Android, iOS, Desktop, and Web platforms.
+    <string name="about_app_description">The PortoExpats application is developed by the JetBrains team using Kotlin Multiplatform for shared logic and Compose Multiplatform for UI across Android, iOS, Desktop, and Web platforms.
 
 For the source code and more technical details, visit the GitHub repository.</string>
     <string name="about_app_link_github">GitHub repository</string>
@@ -33,14 +33,14 @@ For the source code and more technical details, visit the GitHub repository.</st
     <string name="info_link_description_bluesky">Bluesky</string>
 
     <string name="about_conference_title">About the conference</string>
-    <string name="about_conference_header">KotlinConf 2025</string>
+    <string name="about_conference_header">PortoExpats 2025</string>
     <string name="about_conference_description">May 21: Workshops
 May 22–23: Conference
 Bella Center, Copenhagen, Denmark
 
-KotlinConf is the official Kotlin conference by JetBrains. It is a place for the community to gather and discuss all things Kotlin.
+PortoExpats is the official Kotlin conference by JetBrains. It is a place for the community to gather and discuss all things Kotlin.
 
-Social media hashtag: #KotlinConf</string>
+Social media hashtag: #PortoExpats</string>
 
     <string name="about_conference_privacy_notice_link">Privacy notice for visitors</string>
     <string name="about_conference_general_terms_link">General terms and conditions</string>
@@ -62,7 +62,7 @@ Social media hashtag: #KotlinConf</string>
     <string name="about_conference_closingpanel_title_line1">Closing</string>
     <string name="about_conference_closingpanel_title_line2">panel</string>
 
-    <string name="kotlinconf_by_jetbrains_description">KotlinConf by JetBrains 2025</string>
+    <string name="kotlinconf_by_jetbrains_description">PortoExpats by JetBrains 2025</string>
 
     <string name="privacy_notice_title">Privacy notice</string>
     <string name="privacy_notice_description">For you to maximize the benefits of this app, we need your consent to access and use your device ID so you can provide and we can collect and track your feedback about talks.
@@ -79,8 +79,8 @@ We will process your data in accordance with the App Privacy Notice. You can adj
     <string name="notifications_session_reminders_description">Get reminders for sessions that you’ve bookmarked in the schedule to make sure you don’t miss them.</string>
     <string name="notifications_schedule_update_title">Schedule updates</string>
     <string name="notifications_schedule_update_description">Stay informed about crucial changes! Get an alert if there's a significant update to the event schedule.</string>
-    <string name="notifications_kotlinconf_news_title">KotlinConf News</string>
-    <string name="notifications_kotlinconf_news_description">Receive news in between KotlinConf events, including notifications about ticket sales, new videos, contests, schedule announcements, and more.</string>
+    <string name="notifications_kotlinconf_news_title">PortoExpats News</string>
+    <string name="notifications_kotlinconf_news_description">Receive news in between PortoExpats events, including notifications about ticket sales, new videos, contests, schedule announcements, and more.</string>
     <string name="notifications_jetbrains_news_title">JetBrains News</string>
     <string name="notifications_jetbrains_news_description">Get news about JetBrains products.</string>
     <string name="notifications_lets_get_started">Let’s get started!</string>
@@ -88,16 +88,16 @@ We will process your data in accordance with the App Privacy Notice. You can adj
     <string name="code_of_conduct">Code of Conduct</string>
 
     <string name="general_terms">General Terms and Conditions</string>
-    <string name="visitors_terms_title">KotlinConf 2025 General Terms and Conditions for Visitors</string>
+    <string name="visitors_terms_title">PortoExpats 2025 General Terms and Conditions for Visitors</string>
 
     <string name="privacy_notice_for_visitors">Privacy Notice</string>
-    <string name="privacy_notice_for_visitors_title">KotlinConf 2025 Privacy Notice for Visitors</string>
+    <string name="privacy_notice_for_visitors_title">PortoExpats 2025 Privacy Notice for Visitors</string>
 
     <string name="app_privacy_notice_title">Privacy Notice</string>
-    <string name="app_privacy_notice_header">KotlinConf App Privacy Notice</string>
+    <string name="app_privacy_notice_header">PortoExpats App Privacy Notice</string>
 
     <string name="app_terms">Terms of Use</string>
-    <string name="app_terms_header">KotlinConf App Terms of Use</string>
+    <string name="app_terms_header">PortoExpats App Terms of Use</string>
 
     <string name="licenses_title">Licenses</string>
     <plurals name="licenses_number_of_results">
@@ -158,7 +158,7 @@ We will process your data in accordance with the App Privacy Notice. You can adj
     <string name="partners_codelab">Codelab</string>
     <string name="partners_digital">Digital</string>
     <string name="partners_media">Media</string>
-    <string name="partners_swag">Official KotlinConf swag</string>
+    <string name="partners_swag">Official PortoExpats swag</string>
 
     <string name="partner_detail_title">Partner</string>
 </resources>

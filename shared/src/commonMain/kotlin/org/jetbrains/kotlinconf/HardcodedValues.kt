@@ -152,6 +152,6 @@ internal val ABOUT_CONFERENCE_BLOCKS = listOf(
         day = "23",
         title1 = "Closing",
         title2 = "panel",
-        description = "Come and seize the opportunity to ask the KotlinConf speakers your questions in person.",
+        description = "Come and seize the opportunity to ask the PortoExpats speakers your questions in person.",
     )
 )
